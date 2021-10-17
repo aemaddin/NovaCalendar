@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //     //
 // });
 
-Route::get('/events', function (Request $request) {
-    $events = Event::all();
-    return response()->json($events);
-});
+Route::get('/events', 'EventsController@index');
+Route::post('/events/store', 'EventsController@store');
+Route::put('/events/{event_id}/update', 'EventsController@update');
+Route::delete('/events/{event_id}/destroy', 'EventsController@destroy');
