@@ -2,45 +2,44 @@
 
 namespace Asciisd\NovaCalendar\Models;
 
+use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Validator;
 
+/**
+ * @property int id
+ * @property string title
+ * @property string color
+ * @property Carbon start
+ * @property Carbon end
+ */
 class Event extends Model
 {
     protected $casts = [
         'start' => 'datetime',
-        'end' => 'datetime'
+        'end'   => 'datetime',
     ];
 
     protected $guarded = ['id'];
 
-    public function validate($data, $scenario)
-    {
-        switch ($scenario)
-        {
-            case 'create':
-            case 'update':
-                $rules = [
-                    'title' => 'required',
-                    'start' => 'required|date',
-                    'end' => 'required|date|after_or_equal:start'
-                ];
-
-                break;
-        }
-
-        return Validator::make($data, $rules);
+    /**
+     * Get the parent eventable model (user or post).
+     */
+    public function eventable() {
+        return $this->morphTo();
     }
 
-    public function scopeFilter($query, $data)
-    {
-        if ( ! empty($data['start']))
-        {
+    public function getColorAttribute($value) {
+        if( ! $value) {
+            return $this->eventable->color();
+        }
+    }
+
+    public function scopeFilter($query, $data) {
+        if( ! empty($data['start'])) {
             $query->where('start', '>=', $data['start']);
         }
 
-        if ( ! empty($data['end']))
-        {
+        if( ! empty($data['end'])) {
             $query->where('end', '<=', $data['end']);
         }
 

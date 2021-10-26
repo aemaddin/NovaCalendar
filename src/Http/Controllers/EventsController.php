@@ -2,69 +2,83 @@
 
 namespace Asciisd\NovaCalendar\Http\Controllers;
 
-use Asciisd\NovaCalendar\Models\Event;
 use Illuminate\Http\Request;
+use Asciisd\NovaCalendar\Models\Event;
+use Asciisd\NovaCalendar\Http\Requests\EventRequest;
+use Asciisd\NovaCalendar\Http\Requests\EventUpdateRequest;
 
 class EventsController
 {
-    public function index(Request $request)
-    {
+    public function index(Request $request) {
         $events = Event::filter($request->query())
-            ->get(['id', 'title', 'start', 'end']);
+                       ->with('eventable')
+                       ->get();
 
         return response()->json($events);
     }
 
-    public function store(Request $request)
-    {
-        $validation = Event::getModel()->validate($request->input(), 'create');
+    public function eventables() {
+        $eventable_types = config('nova-calendar.eventable_types');
 
-        if ($validation->passes())
-        {
-            $event = Event::create($request->input());
-
-            if ($event)
-            {
-                return response()->json([
-                    'success' => true,
-                    'event' => $event
-                ]);
-            }
+        foreach($eventable_types as $eventable_class => $eventable_meta) {
+            $eventables[] = $eventable_class;
         }
 
-        return response()->json([
-            'error' => true,
-            'message' => $validation->errors()->first()
-        ]);
+        return response()->json($eventables);
     }
 
-    public function update(Request $request, $eventId)
-    {
-        $event = Event::findOrFail($eventId);
-        $validation = Event::getModel()->validate($request->input(), 'update');
+    public function eventableItems($eventable_type) {
+        $eventable_types = config('nova-calendar.eventable_types');
+        $eventable       = $eventable_types[$eventable_type]['path'];
+        $display_fields  = $eventable_types[$eventable_type]['display_fields'];
 
-        if ($validation->passes())
-        {
-            $event->update($request->input());
+        $eventables = $eventable::all('id', ...$display_fields);
 
+        return response()->json($eventables);
+    }
+
+    public function store(EventRequest $request) {
+        $eventable_type = $request->input('eventable_type');
+        $eventable_id   = $request->input('eventable_id');
+
+        $eventable = config('nova-calendar.eventable_types')[$eventable_type];
+
+        $model     = $eventable['path']::find($eventable_id);
+        $new_event = $model->events()->save(
+            Event::make([
+                'title' => $request->title,
+                'start' => $request->start,
+                'end'   => $request->end,
+            ])
+        );
+        if($new_event) {
             return response()->json([
                 'success' => true,
-                'event' => $event
+                'event'   => $new_event,
             ]);
         }
 
         return response()->json([
-            'error' => true,
-            'message' => $validation->errors()->first()
+            'success' => false,
+            'event'   => $new_event,
         ]);
     }
 
-    public function destroy(Request $request, $eventId)
-    {
+    public function update(EventUpdateRequest $request, $eventId) {
         $event = Event::findOrFail($eventId);
 
-        if ( ! is_null($event))
-        {
+        $event->update($request->input());
+
+        return response()->json([
+            'success' => true,
+            'event'   => $event,
+        ]);
+    }
+
+    public function destroy(Request $request, $eventId) {
+        $event = Event::findOrFail($eventId);
+
+        if( ! is_null($event)) {
             $event->delete();
 
             return response()->json(['success' => true]);

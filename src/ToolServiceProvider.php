@@ -29,7 +29,7 @@ class ToolServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__
-            . '/config/nova-calendar-tool.php' => config_path('nova-calendar.php'),
+            . '/config/nova-calendar.php' => config_path('nova-calendar.php'),
         ], 'config');
 
         $this->app->booted(function () {

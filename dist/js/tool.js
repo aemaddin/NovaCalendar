@@ -9939,1707 +9939,6 @@ var unmountComponentAtNode = FullCalendarVDom.unmountComponentAtNode;
 
 /***/ }),
 
-/***/ "./node_modules/@fullcalendar/core/locales-all.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@fullcalendar/core/locales-all.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-
-var l0 = {
-  code: 'af',
-  week: {
-    dow: 1, // Maandag is die eerste dag van die week.
-    doy: 4, // Die week wat die 4de Januarie bevat is die eerste week van die jaar.
-  },
-  buttonText: {
-    prev: 'Vorige',
-    next: 'Volgende',
-    today: 'Vandag',
-    year: 'Jaar',
-    month: 'Maand',
-    week: 'Week',
-    day: 'Dag',
-    list: 'Agenda',
-  },
-  allDayText: 'Heeldag',
-  moreLinkText: 'Addisionele',
-  noEventsText: 'Daar is geen gebeurtenisse nie',
-};
-
-var l1 = {
-  code: 'ar-dz',
-  week: {
-    dow: 0, // Sunday is the first day of the week.
-    doy: 4, // The week that contains Jan 1st is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'السابق',
-    next: 'التالي',
-    today: 'اليوم',
-    month: 'شهر',
-    week: 'أسبوع',
-    day: 'يوم',
-    list: 'أجندة',
-  },
-  weekText: 'أسبوع',
-  allDayText: 'اليوم كله',
-  moreLinkText: 'أخرى',
-  noEventsText: 'أي أحداث لعرض',
-};
-
-var l2 = {
-  code: 'ar-kw',
-  week: {
-    dow: 0, // Sunday is the first day of the week.
-    doy: 12, // The week that contains Jan 1st is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'السابق',
-    next: 'التالي',
-    today: 'اليوم',
-    month: 'شهر',
-    week: 'أسبوع',
-    day: 'يوم',
-    list: 'أجندة',
-  },
-  weekText: 'أسبوع',
-  allDayText: 'اليوم كله',
-  moreLinkText: 'أخرى',
-  noEventsText: 'أي أحداث لعرض',
-};
-
-var l3 = {
-  code: 'ar-ly',
-  week: {
-    dow: 6, // Saturday is the first day of the week.
-    doy: 12, // The week that contains Jan 1st is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'السابق',
-    next: 'التالي',
-    today: 'اليوم',
-    month: 'شهر',
-    week: 'أسبوع',
-    day: 'يوم',
-    list: 'أجندة',
-  },
-  weekText: 'أسبوع',
-  allDayText: 'اليوم كله',
-  moreLinkText: 'أخرى',
-  noEventsText: 'أي أحداث لعرض',
-};
-
-var l4 = {
-  code: 'ar-ma',
-  week: {
-    dow: 6, // Saturday is the first day of the week.
-    doy: 12, // The week that contains Jan 1st is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'السابق',
-    next: 'التالي',
-    today: 'اليوم',
-    month: 'شهر',
-    week: 'أسبوع',
-    day: 'يوم',
-    list: 'أجندة',
-  },
-  weekText: 'أسبوع',
-  allDayText: 'اليوم كله',
-  moreLinkText: 'أخرى',
-  noEventsText: 'أي أحداث لعرض',
-};
-
-var l5 = {
-  code: 'ar-sa',
-  week: {
-    dow: 0, // Sunday is the first day of the week.
-    doy: 6, // The week that contains Jan 1st is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'السابق',
-    next: 'التالي',
-    today: 'اليوم',
-    month: 'شهر',
-    week: 'أسبوع',
-    day: 'يوم',
-    list: 'أجندة',
-  },
-  weekText: 'أسبوع',
-  allDayText: 'اليوم كله',
-  moreLinkText: 'أخرى',
-  noEventsText: 'أي أحداث لعرض',
-};
-
-var l6 = {
-  code: 'ar-tn',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'السابق',
-    next: 'التالي',
-    today: 'اليوم',
-    month: 'شهر',
-    week: 'أسبوع',
-    day: 'يوم',
-    list: 'أجندة',
-  },
-  weekText: 'أسبوع',
-  allDayText: 'اليوم كله',
-  moreLinkText: 'أخرى',
-  noEventsText: 'أي أحداث لعرض',
-};
-
-var l7 = {
-  code: 'ar',
-  week: {
-    dow: 6, // Saturday is the first day of the week.
-    doy: 12, // The week that contains Jan 1st is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'السابق',
-    next: 'التالي',
-    today: 'اليوم',
-    month: 'شهر',
-    week: 'أسبوع',
-    day: 'يوم',
-    list: 'أجندة',
-  },
-  weekText: 'أسبوع',
-  allDayText: 'اليوم كله',
-  moreLinkText: 'أخرى',
-  noEventsText: 'أي أحداث لعرض',
-};
-
-var l8 = {
-  code: 'az',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Əvvəl',
-    next: 'Sonra',
-    today: 'Bu Gün',
-    month: 'Ay',
-    week: 'Həftə',
-    day: 'Gün',
-    list: 'Gündəm',
-  },
-  weekText: 'Həftə',
-  allDayText: 'Bütün Gün',
-  moreLinkText: function(n) {
-    return '+ daha çox ' + n
-  },
-  noEventsText: 'Göstərmək üçün hadisə yoxdur',
-};
-
-var l9 = {
-  code: 'bg',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'назад',
-    next: 'напред',
-    today: 'днес',
-    month: 'Месец',
-    week: 'Седмица',
-    day: 'Ден',
-    list: 'График',
-  },
-  allDayText: 'Цял ден',
-  moreLinkText: function(n) {
-    return '+още ' + n
-  },
-  noEventsText: 'Няма събития за показване',
-};
-
-var l10 = {
-  code: 'bn',
-  week: {
-    dow: 0, // Sunday is the first day of the week.
-    doy: 6, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'পেছনে',
-    next: 'সামনে',
-    today: 'আজ',
-    month: 'মাস',
-    week: 'সপ্তাহ',
-    day: 'দিন',
-    list: 'তালিকা',
-  },
-  weekText: 'সপ্তাহ',
-  allDayText: 'সারাদিন',
-  moreLinkText: function(n) {
-    return '+অন্যান্য ' + n
-  },
-  noEventsText: 'কোনো ইভেন্ট নেই',
-};
-
-var l11 = {
-  code: 'bs',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Prošli',
-    next: 'Sljedeći',
-    today: 'Danas',
-    month: 'Mjesec',
-    week: 'Sedmica',
-    day: 'Dan',
-    list: 'Raspored',
-  },
-  weekText: 'Sed',
-  allDayText: 'Cijeli dan',
-  moreLinkText: function(n) {
-    return '+ još ' + n
-  },
-  noEventsText: 'Nema događaja za prikazivanje',
-};
-
-var l12 = {
-  code: 'ca',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Anterior',
-    next: 'Següent',
-    today: 'Avui',
-    month: 'Mes',
-    week: 'Setmana',
-    day: 'Dia',
-    list: 'Agenda',
-  },
-  weekText: 'Set',
-  allDayText: 'Tot el dia',
-  moreLinkText: 'més',
-  noEventsText: 'No hi ha esdeveniments per mostrar',
-};
-
-var l13 = {
-  code: 'cs',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Dříve',
-    next: 'Později',
-    today: 'Nyní',
-    month: 'Měsíc',
-    week: 'Týden',
-    day: 'Den',
-    list: 'Agenda',
-  },
-  weekText: 'Týd',
-  allDayText: 'Celý den',
-  moreLinkText: function(n) {
-    return '+další: ' + n
-  },
-  noEventsText: 'Žádné akce k zobrazení',
-};
-
-var l14 = {
-  code: 'cy',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Blaenorol',
-    next: 'Nesaf',
-    today: 'Heddiw',
-    year: 'Blwyddyn',
-    month: 'Mis',
-    week: 'Wythnos',
-    day: 'Dydd',
-    list: 'Rhestr',
-  },
-  weekText: 'Wythnos',
-  allDayText: 'Trwy\'r dydd',
-  moreLinkText: 'Mwy',
-  noEventsText: 'Dim digwyddiadau',
-};
-
-var l15 = {
-  code: 'da',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Forrige',
-    next: 'Næste',
-    today: 'I dag',
-    month: 'Måned',
-    week: 'Uge',
-    day: 'Dag',
-    list: 'Agenda',
-  },
-  weekText: 'Uge',
-  allDayText: 'Hele dagen',
-  moreLinkText: 'flere',
-  noEventsText: 'Ingen arrangementer at vise',
-};
-
-var l16 = {
-  code: 'de-at',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Zurück',
-    next: 'Vor',
-    today: 'Heute',
-    year: 'Jahr',
-    month: 'Monat',
-    week: 'Woche',
-    day: 'Tag',
-    list: 'Terminübersicht',
-  },
-  weekText: 'KW',
-  allDayText: 'Ganztägig',
-  moreLinkText: function(n) {
-    return '+ weitere ' + n
-  },
-  noEventsText: 'Keine Ereignisse anzuzeigen',
-};
-
-var l17 = {
-  code: 'de',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Zurück',
-    next: 'Vor',
-    today: 'Heute',
-    year: 'Jahr',
-    month: 'Monat',
-    week: 'Woche',
-    day: 'Tag',
-    list: 'Terminübersicht',
-  },
-  weekText: 'KW',
-  allDayText: 'Ganztägig',
-  moreLinkText: function(n) {
-    return '+ weitere ' + n
-  },
-  noEventsText: 'Keine Ereignisse anzuzeigen',
-};
-
-var l18 = {
-  code: 'el',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Προηγούμενος',
-    next: 'Επόμενος',
-    today: 'Σήμερα',
-    month: 'Μήνας',
-    week: 'Εβδομάδα',
-    day: 'Ημέρα',
-    list: 'Ατζέντα',
-  },
-  weekText: 'Εβδ',
-  allDayText: 'Ολοήμερο',
-  moreLinkText: 'περισσότερα',
-  noEventsText: 'Δεν υπάρχουν γεγονότα προς εμφάνιση',
-};
-
-var l19 = {
-  code: 'en-au',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonHints: {
-    prev: 'Previous $0',
-    next: 'Next $0',
-    today: 'This $0',
-  },
-  viewHint: '$0 view',
-  navLinkHint: 'Go to $0',
-  moreLinkHint(eventCnt) {
-    return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
-  },
-};
-
-var l20 = {
-  code: 'en-gb',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonHints: {
-    prev: 'Previous $0',
-    next: 'Next $0',
-    today: 'This $0',
-  },
-  viewHint: '$0 view',
-  navLinkHint: 'Go to $0',
-  moreLinkHint(eventCnt) {
-    return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
-  },
-};
-
-var l21 = {
-  code: 'en-nz',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonHints: {
-    prev: 'Previous $0',
-    next: 'Next $0',
-    today: 'This $0',
-  },
-  viewHint: '$0 view',
-  navLinkHint: 'Go to $0',
-  moreLinkHint(eventCnt) {
-    return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
-  },
-};
-
-var l22 = {
-  code: 'eo',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Antaŭa',
-    next: 'Sekva',
-    today: 'Hodiaŭ',
-    month: 'Monato',
-    week: 'Semajno',
-    day: 'Tago',
-    list: 'Tagordo',
-  },
-  weekText: 'Sm',
-  allDayText: 'Tuta tago',
-  moreLinkText: 'pli',
-  noEventsText: 'Neniuj eventoj por montri',
-};
-
-var l23 = {
-  code: 'es',
-  week: {
-    dow: 0, // Sunday is the first day of the week.
-    doy: 6, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Ant',
-    next: 'Sig',
-    today: 'Hoy',
-    month: 'Mes',
-    week: 'Semana',
-    day: 'Día',
-    list: 'Agenda',
-  },
-  weekText: 'Sm',
-  allDayText: 'Todo el día',
-  moreLinkText: 'más',
-  noEventsText: 'No hay eventos para mostrar',
-};
-
-var l24 = {
-  code: 'es',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Ant',
-    next: 'Sig',
-    today: 'Hoy',
-    month: 'Mes',
-    week: 'Semana',
-    day: 'Día',
-    list: 'Agenda',
-  },
-  buttonHints: {
-    prev: '$0 antes',
-    next: '$0 siguiente',
-    today(buttonText) {
-      return (buttonText === 'Día') ? 'Hoy' :
-        ((buttonText === 'Semana') ? 'Esta' : 'Este') + ' ' + buttonText.toLocaleLowerCase()
-    },
-  },
-  viewHint(buttonText) {
-    return 'Vista ' + (buttonText === 'Semana' ? 'de la' : 'del') + ' ' + buttonText.toLocaleLowerCase()
-  },
-  weekText: 'Sm',
-  weekTextLong: 'Semana',
-  allDayText: 'Todo el día',
-  moreLinkText: 'más',
-  moreLinkHint(eventCnt) {
-    return `Mostrar ${eventCnt} eventos más`
-  },
-  noEventsText: 'No hay eventos para mostrar',
-  navLinkHint: 'Ir al $0',
-  closeHint: 'Cerrar',
-  timeHint: 'La hora',
-  eventHint: 'Evento',
-};
-
-var l25 = {
-  code: 'et',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Eelnev',
-    next: 'Järgnev',
-    today: 'Täna',
-    month: 'Kuu',
-    week: 'Nädal',
-    day: 'Päev',
-    list: 'Päevakord',
-  },
-  weekText: 'näd',
-  allDayText: 'Kogu päev',
-  moreLinkText: function(n) {
-    return '+ veel ' + n
-  },
-  noEventsText: 'Kuvamiseks puuduvad sündmused',
-};
-
-var l26 = {
-  code: 'eu',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Aur',
-    next: 'Hur',
-    today: 'Gaur',
-    month: 'Hilabetea',
-    week: 'Astea',
-    day: 'Eguna',
-    list: 'Agenda',
-  },
-  weekText: 'As',
-  allDayText: 'Egun osoa',
-  moreLinkText: 'gehiago',
-  noEventsText: 'Ez dago ekitaldirik erakusteko',
-};
-
-var l27 = {
-  code: 'fa',
-  week: {
-    dow: 6, // Saturday is the first day of the week.
-    doy: 12, // The week that contains Jan 1st is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'قبلی',
-    next: 'بعدی',
-    today: 'امروز',
-    month: 'ماه',
-    week: 'هفته',
-    day: 'روز',
-    list: 'برنامه',
-  },
-  weekText: 'هف',
-  allDayText: 'تمام روز',
-  moreLinkText: function(n) {
-    return 'بیش از ' + n
-  },
-  noEventsText: 'هیچ رویدادی به نمایش',
-};
-
-var l28 = {
-  code: 'fi',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Edellinen',
-    next: 'Seuraava',
-    today: 'Tänään',
-    month: 'Kuukausi',
-    week: 'Viikko',
-    day: 'Päivä',
-    list: 'Tapahtumat',
-  },
-  weekText: 'Vk',
-  allDayText: 'Koko päivä',
-  moreLinkText: 'lisää',
-  noEventsText: 'Ei näytettäviä tapahtumia',
-};
-
-var l29 = {
-  code: 'fr',
-  buttonText: {
-    prev: 'Précédent',
-    next: 'Suivant',
-    today: "Aujourd'hui",
-    year: 'Année',
-    month: 'Mois',
-    week: 'Semaine',
-    day: 'Jour',
-    list: 'Mon planning',
-  },
-  weekText: 'Sem.',
-  allDayText: 'Toute la journée',
-  moreLinkText: 'en plus',
-  noEventsText: 'Aucun événement à afficher',
-};
-
-var l30 = {
-  code: 'fr-ch',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Précédent',
-    next: 'Suivant',
-    today: 'Courant',
-    year: 'Année',
-    month: 'Mois',
-    week: 'Semaine',
-    day: 'Jour',
-    list: 'Mon planning',
-  },
-  weekText: 'Sm',
-  allDayText: 'Toute la journée',
-  moreLinkText: 'en plus',
-  noEventsText: 'Aucun événement à afficher',
-};
-
-var l31 = {
-  code: 'fr',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Précédent',
-    next: 'Suivant',
-    today: "Aujourd'hui",
-    year: 'Année',
-    month: 'Mois',
-    week: 'Semaine',
-    day: 'Jour',
-    list: 'Planning',
-  },
-  weekText: 'Sem.',
-  allDayText: 'Toute la journée',
-  moreLinkText: 'en plus',
-  noEventsText: 'Aucun événement à afficher',
-};
-
-var l32 = {
-  code: 'gl',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Ant',
-    next: 'Seg',
-    today: 'Hoxe',
-    month: 'Mes',
-    week: 'Semana',
-    day: 'Día',
-    list: 'Axenda',
-  },
-  weekText: 'Sm',
-  allDayText: 'Todo o día',
-  moreLinkText: 'máis',
-  noEventsText: 'Non hai eventos para amosar',
-};
-
-var l33 = {
-  code: 'he',
-  direction: 'rtl',
-  buttonText: {
-    prev: 'הקודם',
-    next: 'הבא',
-    today: 'היום',
-    month: 'חודש',
-    week: 'שבוע',
-    day: 'יום',
-    list: 'סדר יום',
-  },
-  allDayText: 'כל היום',
-  moreLinkText: 'אחר',
-  noEventsText: 'אין אירועים להצגה',
-  weekText: 'שבוע',
-};
-
-var l34 = {
-  code: 'hi',
-  week: {
-    dow: 0, // Sunday is the first day of the week.
-    doy: 6, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'पिछला',
-    next: 'अगला',
-    today: 'आज',
-    month: 'महीना',
-    week: 'सप्ताह',
-    day: 'दिन',
-    list: 'कार्यसूची',
-  },
-  weekText: 'हफ्ता',
-  allDayText: 'सभी दिन',
-  moreLinkText: function(n) {
-    return '+अधिक ' + n
-  },
-  noEventsText: 'कोई घटनाओं को प्रदर्शित करने के लिए',
-};
-
-var l35 = {
-  code: 'hr',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Prijašnji',
-    next: 'Sljedeći',
-    today: 'Danas',
-    month: 'Mjesec',
-    week: 'Tjedan',
-    day: 'Dan',
-    list: 'Raspored',
-  },
-  weekText: 'Tje',
-  allDayText: 'Cijeli dan',
-  moreLinkText: function(n) {
-    return '+ još ' + n
-  },
-  noEventsText: 'Nema događaja za prikaz',
-};
-
-var l36 = {
-  code: 'hu',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'vissza',
-    next: 'előre',
-    today: 'ma',
-    month: 'Hónap',
-    week: 'Hét',
-    day: 'Nap',
-    list: 'Lista',
-  },
-  weekText: 'Hét',
-  allDayText: 'Egész nap',
-  moreLinkText: 'további',
-  noEventsText: 'Nincs megjeleníthető esemény',
-};
-
-var l37 = {
-  code: 'hy-am',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Նախորդ',
-    next: 'Հաջորդ',
-    today: 'Այսօր',
-    month: 'Ամիս',
-    week: 'Շաբաթ',
-    day: 'Օր',
-    list: 'Օրվա ցուցակ',
-  },
-  weekText: 'Շաբ',
-  allDayText: 'Ամբողջ օր',
-  moreLinkText: function(n) {
-    return '+ ևս ' + n
-  },
-  noEventsText: 'Բացակայում է իրադարձությունը ցուցադրելու',
-};
-
-var l38 = {
-  code: 'id',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'mundur',
-    next: 'maju',
-    today: 'hari ini',
-    month: 'Bulan',
-    week: 'Minggu',
-    day: 'Hari',
-    list: 'Agenda',
-  },
-  weekText: 'Mg',
-  allDayText: 'Sehari penuh',
-  moreLinkText: 'lebih',
-  noEventsText: 'Tidak ada acara untuk ditampilkan',
-};
-
-var l39 = {
-  code: 'is',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Fyrri',
-    next: 'Næsti',
-    today: 'Í dag',
-    month: 'Mánuður',
-    week: 'Vika',
-    day: 'Dagur',
-    list: 'Dagskrá',
-  },
-  weekText: 'Vika',
-  allDayText: 'Allan daginn',
-  moreLinkText: 'meira',
-  noEventsText: 'Engir viðburðir til að sýna',
-};
-
-var l40 = {
-  code: 'it',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Prec',
-    next: 'Succ',
-    today: 'Oggi',
-    month: 'Mese',
-    week: 'Settimana',
-    day: 'Giorno',
-    list: 'Agenda',
-  },
-  weekText: 'Sm',
-  allDayText: 'Tutto il giorno',
-  moreLinkText: function(n) {
-    return '+altri ' + n
-  },
-  noEventsText: 'Non ci sono eventi da visualizzare',
-};
-
-var l41 = {
-  code: 'ja',
-  buttonText: {
-    prev: '前',
-    next: '次',
-    today: '今日',
-    month: '月',
-    week: '週',
-    day: '日',
-    list: '予定リスト',
-  },
-  weekText: '週',
-  allDayText: '終日',
-  moreLinkText: function(n) {
-    return '他 ' + n + ' 件'
-  },
-  noEventsText: '表示する予定はありません',
-};
-
-var l42 = {
-  code: 'ka',
-  week: {
-    dow: 1,
-    doy: 7,
-  },
-  buttonText: {
-    prev: 'წინა',
-    next: 'შემდეგი',
-    today: 'დღეს',
-    month: 'თვე',
-    week: 'კვირა',
-    day: 'დღე',
-    list: 'დღის წესრიგი',
-  },
-  weekText: 'კვ',
-  allDayText: 'მთელი დღე',
-  moreLinkText: function(n) {
-    return '+ კიდევ ' + n
-  },
-  noEventsText: 'ღონისძიებები არ არის',
-};
-
-var l43 = {
-  code: 'kk',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Алдыңғы',
-    next: 'Келесі',
-    today: 'Бүгін',
-    month: 'Ай',
-    week: 'Апта',
-    day: 'Күн',
-    list: 'Күн тәртібі',
-  },
-  weekText: 'Не',
-  allDayText: 'Күні бойы',
-  moreLinkText: function(n) {
-    return '+ тағы ' + n
-  },
-  noEventsText: 'Көрсету үшін оқиғалар жоқ',
-};
-
-var l44 = {
-  code: 'km',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'មុន',
-    next: 'បន្ទាប់',
-    today: 'ថ្ងៃនេះ',
-    year: 'ឆ្នាំ',
-    month: 'ខែ',
-    week: 'សប្តាហ៍',
-    day: 'ថ្ងៃ',
-    list: 'បញ្ជី',
-  },
-  weekText: 'សប្តាហ៍',
-  allDayText: 'ពេញមួយថ្ងៃ',
-  moreLinkText: 'ច្រើនទៀត',
-  noEventsText: 'គ្មានព្រឹត្តិការណ៍ត្រូវបង្ហាញ',
-};
-
-var l45 = {
-  code: 'ko',
-  buttonText: {
-    prev: '이전달',
-    next: '다음달',
-    today: '오늘',
-    month: '월',
-    week: '주',
-    day: '일',
-    list: '일정목록',
-  },
-  weekText: '주',
-  allDayText: '종일',
-  moreLinkText: '개',
-  noEventsText: '일정이 없습니다',
-};
-
-var l46 = {
-  code: 'ku',
-  week: {
-    dow: 6, // Saturday is the first day of the week.
-    doy: 12, // The week that contains Jan 1st is the first week of the year.
-  },
-  direction: 'rtl',
-  buttonText: {
-    prev: 'پێشتر',
-    next: 'دواتر',
-    today: 'ئەمڕو',
-    month: 'مانگ',
-    week: 'هەفتە',
-    day: 'ڕۆژ',
-    list: 'بەرنامە',
-  },
-  weekText: 'هەفتە',
-  allDayText: 'هەموو ڕۆژەکە',
-  moreLinkText: 'زیاتر',
-  noEventsText: 'هیچ ڕووداوێك نیە',
-};
-
-var l47 = {
-  code: 'lb',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Zréck',
-    next: 'Weider',
-    today: 'Haut',
-    month: 'Mount',
-    week: 'Woch',
-    day: 'Dag',
-    list: 'Terminiwwersiicht',
-  },
-  weekText: 'W',
-  allDayText: 'Ganzen Dag',
-  moreLinkText: 'méi',
-  noEventsText: 'Nee Evenementer ze affichéieren',
-};
-
-var l48 = {
-  code: 'lt',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Atgal',
-    next: 'Pirmyn',
-    today: 'Šiandien',
-    month: 'Mėnuo',
-    week: 'Savaitė',
-    day: 'Diena',
-    list: 'Darbotvarkė',
-  },
-  weekText: 'SAV',
-  allDayText: 'Visą dieną',
-  moreLinkText: 'daugiau',
-  noEventsText: 'Nėra įvykių rodyti',
-};
-
-var l49 = {
-  code: 'lv',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Iepr.',
-    next: 'Nāk.',
-    today: 'Šodien',
-    month: 'Mēnesis',
-    week: 'Nedēļa',
-    day: 'Diena',
-    list: 'Dienas kārtība',
-  },
-  weekText: 'Ned.',
-  allDayText: 'Visu dienu',
-  moreLinkText: function(n) {
-    return '+vēl ' + n
-  },
-  noEventsText: 'Nav notikumu',
-};
-
-var l50 = {
-  code: 'mk',
-  buttonText: {
-    prev: 'претходно',
-    next: 'следно',
-    today: 'Денес',
-    month: 'Месец',
-    week: 'Недела',
-    day: 'Ден',
-    list: 'График',
-  },
-  weekText: 'Сед',
-  allDayText: 'Цел ден',
-  moreLinkText: function(n) {
-    return '+повеќе ' + n
-  },
-  noEventsText: 'Нема настани за прикажување',
-};
-
-var l51 = {
-  code: 'ms',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Sebelum',
-    next: 'Selepas',
-    today: 'hari ini',
-    month: 'Bulan',
-    week: 'Minggu',
-    day: 'Hari',
-    list: 'Agenda',
-  },
-  weekText: 'Mg',
-  allDayText: 'Sepanjang hari',
-  moreLinkText: function(n) {
-    return 'masih ada ' + n + ' acara'
-  },
-  noEventsText: 'Tiada peristiwa untuk dipaparkan',
-};
-
-var l52 = {
-  code: 'nb',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Forrige',
-    next: 'Neste',
-    today: 'I dag',
-    month: 'Måned',
-    week: 'Uke',
-    day: 'Dag',
-    list: 'Agenda',
-  },
-  weekText: 'Uke',
-  allDayText: 'Hele dagen',
-  moreLinkText: 'til',
-  noEventsText: 'Ingen hendelser å vise',
-};
-
-var l53 = {
-  code: 'ne', // code for nepal
-  week: {
-    dow: 7, // Sunday is the first day of the week.
-    doy: 1, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'अघिल्लो',
-    next: 'अर्को',
-    today: 'आज',
-    month: 'महिना',
-    week: 'हप्ता',
-    day: 'दिन',
-    list: 'सूची',
-  },
-  weekText: 'हप्ता',
-  allDayText: 'दिनभरि',
-  moreLinkText: 'थप लिंक',
-  noEventsText: 'देखाउनको लागि कुनै घटनाहरू छैनन्',
-};
-
-var l54 = {
-  code: 'nl',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Vorige',
-    next: 'Volgende',
-    today: 'Vandaag',
-    year: 'Jaar',
-    month: 'Maand',
-    week: 'Week',
-    day: 'Dag',
-    list: 'Agenda',
-  },
-  allDayText: 'Hele dag',
-  moreLinkText: 'extra',
-  noEventsText: 'Geen evenementen om te laten zien',
-};
-
-var l55 = {
-  code: 'nn',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Førre',
-    next: 'Neste',
-    today: 'I dag',
-    month: 'Månad',
-    week: 'Veke',
-    day: 'Dag',
-    list: 'Agenda',
-  },
-  weekText: 'Veke',
-  allDayText: 'Heile dagen',
-  moreLinkText: 'til',
-  noEventsText: 'Ingen hendelser å vise',
-};
-
-var l56 = {
-  code: 'pl',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Poprzedni',
-    next: 'Następny',
-    today: 'Dziś',
-    month: 'Miesiąc',
-    week: 'Tydzień',
-    day: 'Dzień',
-    list: 'Plan dnia',
-  },
-  weekText: 'Tydz',
-  allDayText: 'Cały dzień',
-  moreLinkText: 'więcej',
-  noEventsText: 'Brak wydarzeń do wyświetlenia',
-};
-
-var l57 = {
-  code: 'pt-br',
-  buttonText: {
-    prev: 'Anterior',
-    next: 'Próximo',
-    today: 'Hoje',
-    month: 'Mês',
-    week: 'Semana',
-    day: 'Dia',
-    list: 'Lista',
-  },
-  weekText: 'Sm',
-  allDayText: 'dia inteiro',
-  moreLinkText: function(n) {
-    return 'mais +' + n
-  },
-  noEventsText: 'Não há eventos para mostrar',
-};
-
-var l58 = {
-  code: 'pt',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Anterior',
-    next: 'Seguinte',
-    today: 'Hoje',
-    month: 'Mês',
-    week: 'Semana',
-    day: 'Dia',
-    list: 'Agenda',
-  },
-  weekText: 'Sem',
-  allDayText: 'Todo o dia',
-  moreLinkText: 'mais',
-  noEventsText: 'Não há eventos para mostrar',
-};
-
-var l59 = {
-  code: 'ro',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'precedentă',
-    next: 'următoare',
-    today: 'Azi',
-    month: 'Lună',
-    week: 'Săptămână',
-    day: 'Zi',
-    list: 'Agendă',
-  },
-  weekText: 'Săpt',
-  allDayText: 'Toată ziua',
-  moreLinkText: function(n) {
-    return '+alte ' + n
-  },
-  noEventsText: 'Nu există evenimente de afișat',
-};
-
-var l60 = {
-  code: 'ru',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Пред',
-    next: 'След',
-    today: 'Сегодня',
-    month: 'Месяц',
-    week: 'Неделя',
-    day: 'День',
-    list: 'Повестка дня',
-  },
-  weekText: 'Нед',
-  allDayText: 'Весь день',
-  moreLinkText: function(n) {
-    return '+ ещё ' + n
-  },
-  noEventsText: 'Нет событий для отображения',
-};
-
-var l61 = {
-  code: 'si-lk',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'පෙර',
-    next: 'පසු',
-    today: 'අද',
-    month: 'මාසය',
-    week: 'සතිය',
-    day: 'දවස',
-    list: 'ලැයිස්තුව',
-  },
-  weekText: 'සති',
-  allDayText: 'සියලු',
-  moreLinkText: 'තවත්',
-  noEventsText: 'මුකුත් නැත',
-};
-
-var l62 = {
-  code: 'sk',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Predchádzajúci',
-    next: 'Nasledujúci',
-    today: 'Dnes',
-    month: 'Mesiac',
-    week: 'Týždeň',
-    day: 'Deň',
-    list: 'Rozvrh',
-  },
-  weekText: 'Ty',
-  allDayText: 'Celý deň',
-  moreLinkText: function(n) {
-    return '+ďalšie: ' + n
-  },
-  noEventsText: 'Žiadne akcie na zobrazenie',
-};
-
-var l63 = {
-  code: 'sl',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Prejšnji',
-    next: 'Naslednji',
-    today: 'Trenutni',
-    month: 'Mesec',
-    week: 'Teden',
-    day: 'Dan',
-    list: 'Dnevni red',
-  },
-  weekText: 'Teden',
-  allDayText: 'Ves dan',
-  moreLinkText: 'več',
-  noEventsText: 'Ni dogodkov za prikaz',
-};
-
-var l64 = {
-  code: 'sm',
-  buttonText: {
-    prev: 'Talu ai',
-    next: 'Mulimuli atu',
-    today: 'Aso nei',
-    month: 'Masina',
-    week: 'Vaiaso',
-    day: 'Aso',
-    list: 'Faasologa',
-  },
-  weekText: 'Vaiaso',
-  allDayText: 'Aso atoa',
-  moreLinkText: 'sili atu',
-  noEventsText: 'Leai ni mea na tutupu',
-};
-
-var l65 = {
-  code: 'sq',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'mbrapa',
-    next: 'Përpara',
-    today: 'sot',
-    month: 'Muaj',
-    week: 'Javë',
-    day: 'Ditë',
-    list: 'Listë',
-  },
-  weekText: 'Ja',
-  allDayText: 'Gjithë ditën',
-  moreLinkText: function(n) {
-    return '+më tepër ' + n
-  },
-  noEventsText: 'Nuk ka evente për të shfaqur',
-};
-
-var l66 = {
-  code: 'sr-cyrl',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Претходна',
-    next: 'следећи',
-    today: 'Данас',
-    month: 'Месец',
-    week: 'Недеља',
-    day: 'Дан',
-    list: 'Планер',
-  },
-  weekText: 'Сед',
-  allDayText: 'Цео дан',
-  moreLinkText: function(n) {
-    return '+ још ' + n
-  },
-  noEventsText: 'Нема догађаја за приказ',
-};
-
-var l67 = {
-  code: 'sr',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Prethodna',
-    next: 'Sledeći',
-    today: 'Danas',
-    month: 'Mеsеc',
-    week: 'Nеdеlja',
-    day: 'Dan',
-    list: 'Planеr',
-  },
-  weekText: 'Sed',
-  allDayText: 'Cеo dan',
-  moreLinkText: function(n) {
-    return '+ još ' + n
-  },
-  noEventsText: 'Nеma događaja za prikaz',
-};
-
-var l68 = {
-  code: 'sv',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Förra',
-    next: 'Nästa',
-    today: 'Idag',
-    month: 'Månad',
-    week: 'Vecka',
-    day: 'Dag',
-    list: 'Program',
-  },
-  weekText: 'v.',
-  allDayText: 'Heldag',
-  moreLinkText: 'till',
-  noEventsText: 'Inga händelser att visa',
-};
-
-var l69 = {
-  code: 'ta-in',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'முந்தைய',
-    next: 'அடுத்தது',
-    today: 'இன்று',
-    month: 'மாதம்',
-    week: 'வாரம்',
-    day: 'நாள்',
-    list: 'தினசரி அட்டவணை',
-  },
-  weekText: 'வாரம்',
-  allDayText: 'நாள் முழுவதும்',
-  moreLinkText: function(n) {
-    return '+ மேலும் ' + n
-  },
-  noEventsText: 'காண்பிக்க நிகழ்வுகள் இல்லை',
-};
-
-var l70 = {
-  code: 'th',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'ก่อนหน้า',
-    next: 'ถัดไป',
-    prevYear: 'ปีก่อนหน้า',
-    nextYear: 'ปีถัดไป',
-    year: 'ปี',
-    today: 'วันนี้',
-    month: 'เดือน',
-    week: 'สัปดาห์',
-    day: 'วัน',
-    list: 'กำหนดการ',
-  },
-  weekText: 'สัปดาห์',
-  allDayText: 'ตลอดวัน',
-  moreLinkText: 'เพิ่มเติม',
-  noEventsText: 'ไม่มีกิจกรรมที่จะแสดง',
-};
-
-var l71 = {
-  code: 'tr',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'geri',
-    next: 'ileri',
-    today: 'bugün',
-    month: 'Ay',
-    week: 'Hafta',
-    day: 'Gün',
-    list: 'Ajanda',
-  },
-  weekText: 'Hf',
-  allDayText: 'Tüm gün',
-  moreLinkText: 'daha fazla',
-  noEventsText: 'Gösterilecek etkinlik yok',
-};
-
-var l72 = {
-  code: 'ug',
-  buttonText: {
-    month: 'ئاي',
-    week: 'ھەپتە',
-    day: 'كۈن',
-    list: 'كۈنتەرتىپ',
-  },
-  allDayText: 'پۈتۈن كۈن',
-};
-
-var l73 = {
-  code: 'uk',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 7, // The week that contains Jan 1st is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Попередній',
-    next: 'далі',
-    today: 'Сьогодні',
-    month: 'Місяць',
-    week: 'Тиждень',
-    day: 'День',
-    list: 'Порядок денний',
-  },
-  weekText: 'Тиж',
-  allDayText: 'Увесь день',
-  moreLinkText: function(n) {
-    return '+ще ' + n + '...'
-  },
-  noEventsText: 'Немає подій для відображення',
-};
-
-var l74 = {
-  code: 'uz',
-  buttonText: {
-    month: 'Oy',
-    week: 'Xafta',
-    day: 'Kun',
-    list: 'Kun tartibi',
-  },
-  allDayText: "Kun bo'yi",
-  moreLinkText: function(n) {
-    return '+ yana ' + n
-  },
-  noEventsText: "Ko'rsatish uchun voqealar yo'q",
-};
-
-var l75 = {
-  code: 'vi',
-  week: {
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: 'Trước',
-    next: 'Tiếp',
-    today: 'Hôm nay',
-    month: 'Tháng',
-    week: 'Tuần',
-    day: 'Ngày',
-    list: 'Lịch biểu',
-  },
-  weekText: 'Tu',
-  allDayText: 'Cả ngày',
-  moreLinkText: function(n) {
-    return '+ thêm ' + n
-  },
-  noEventsText: 'Không có sự kiện để hiển thị',
-};
-
-var l76 = {
-  code: 'zh-cn',
-  week: {
-    // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
-    dow: 1, // Monday is the first day of the week.
-    doy: 4, // The week that contains Jan 4th is the first week of the year.
-  },
-  buttonText: {
-    prev: '上月',
-    next: '下月',
-    today: '今天',
-    month: '月',
-    week: '周',
-    day: '日',
-    list: '日程',
-  },
-  weekText: '周',
-  allDayText: '全天',
-  moreLinkText: function(n) {
-    return '另外 ' + n + ' 个'
-  },
-  noEventsText: '没有事件显示',
-};
-
-var l77 = {
-  code: 'zh-tw',
-  buttonText: {
-    prev: '上月',
-    next: '下月',
-    today: '今天',
-    month: '月',
-    week: '週',
-    day: '天',
-    list: '活動列表',
-  },
-  weekText: '周',
-  allDayText: '整天',
-  moreLinkText: '顯示更多',
-  noEventsText: '没有任何活動',
-};
-
-/* eslint max-len: off */
-
-var localesAll = [
-  l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36, l37, l38, l39, l40, l41, l42, l43, l44, l45, l46, l47, l48, l49, l50, l51, l52, l53, l54, l55, l56, l57, l58, l59, l60, l61, l62, l63, l64, l65, l66, l67, l68, l69, l70, l71, l72, l73, l74, l75, l76, l77, 
-];
-
-exports["default"] = localesAll;
-
-
-/***/ }),
-
 /***/ "./node_modules/@fullcalendar/core/main.js":
 /*!*************************************************!*\
   !*** ./node_modules/@fullcalendar/core/main.js ***!
@@ -17091,17 +15390,62 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'EventModal',
   props: ['currentEvent', 'currentDate'],
   data: function data() {
     return {
+      eventables: [],
       title: this.currentEvent !== null ? this.currentEvent.event.title : '',
+      eventable_items: [],
+      eventable_type: null,
+      display_field: 'title',
+      eventable_id: null,
       start: moment(this.currentEvent !== null ? this.currentEvent.event.start : this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
-      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).add(1, 'hour').format('YYYY-MM-DD HH:mm:ss')
+      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).format('YYYY-MM-DD HH:mm:ss')
     };
   },
   methods: {
+    getEventables: function getEventables() {
+      var _this = this;
+
+      Nova.request().get('/nova-vendor/nova-calendar/eventables').then(function (response) {
+        _this.eventables = response.data;
+      });
+    },
+    getEventableItems: function getEventableItems() {
+      var _this2 = this;
+
+      this.eventable_id = 1;
+      Nova.request().get('/nova-vendor/nova-calendar/eventables/' + this.eventable_type).then(function (response) {
+        _this2.eventable_items = response.data;
+      });
+    },
     changeStart: function changeStart(value) {
       this.start = value;
     },
@@ -17111,76 +15455,93 @@ __webpack_require__.r(__webpack_exports__);
     handleClose: function handleClose() {
       this.$emit('close');
     },
+    handleConfirm: function handleConfirm() {
+      this.handleSave();
+      this.$emit('confirm');
+    },
     handleDelete: function handleDelete() {
-      var _this = this;
+      var _this3 = this;
 
       Nova.request()["delete"]('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/destroy').then(function (response) {
         if (response.data.success) {
-          _this.$toasted.show('Event has been deleted', {
+          _this3.$toasted.show('Event has been deleted', {
             type: 'success'
           });
 
-          _this.$emit('close');
+          _this3.$emit('close');
 
-          _this.$emit('refreshEvents');
+          _this3.$emit('refreshEvents');
         }
       })["catch"](function (response) {
-        return _this.$toasted.show('Something went wrong', {
+        return _this3.$toasted.show('Something went wrong', {
           type: 'error'
         });
       });
     },
     handleSave: function handleSave() {
-      var _this2 = this;
+      var _this4 = this;
 
       var data = {
         title: this.title,
-        start: this.start,
-        end: this.end
+        eventable_id: this.eventable_id,
+        eventable_type: this.eventable_type,
+        start: moment.utc(moment(this.start)),
+        // convert time to utc before save it
+        end: moment.utc(moment(this.end)) // convert time to utc before save it
+
       };
 
       if (this.currentEvent === null) {
         Nova.request().post('/nova-vendor/nova-calendar/events/store', data).then(function (response) {
           if (response.data.success) {
-            _this2.$toasted.show('Event has been created', {
+            _this4.$toasted.show('Event has been created', {
               type: 'success'
             });
 
-            _this2.$emit('close');
+            _this4.$emit('close');
 
-            _this2.$emit('refreshEvents');
+            _this4.$emit('refreshEvents');
           } else if (response.data.error === true) {
-            _this2.$toasted.show(response.data.message, {
+            _this4.$toasted.show(response.data.message, {
               type: 'error'
             });
           }
         })["catch"](function (response) {
-          return _this2.$toasted.show('Something went wrong', {
+          return _this4.$toasted.show('Something went wrong', {
             type: 'error'
           });
         });
       } else if (this.currentEvent !== null) {
-        Nova.request().put('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/update', data).then(function (response) {
+        Nova.request().put('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/update', {
+          title: this.title,
+          start: moment.utc(moment(this.start)),
+          // convert time to utc before save it
+          end: moment.utc(moment(this.end)) // convert time to utc before save it
+
+        }).then(function (response) {
           if (response.data.success) {
-            _this2.$toasted.show('Event has been updated', {
+            _this4.$toasted.show('Event has been updated', {
               type: 'success'
             });
 
-            _this2.$emit('close');
+            _this4.$emit('close');
 
-            _this2.$emit('refreshEvents');
+            _this4.$emit('refreshEvents');
           } else if (response.data.error === true) {
-            _this2.$toasted.show(response.data.message, {
+            _this4.$toasted.show(response.data.message, {
               type: 'error'
             });
           }
         })["catch"](function (response) {
-          return _this2.$toasted.show('Something went wrong', {
+          return _this4.$toasted.show('Something went wrong', {
             type: 'error'
           });
         });
       }
     }
+  },
+  mounted: function mounted() {
+    this.getEventables();
   }
 });
 
@@ -17200,8 +15561,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fullcalendar/daygrid */ "./node_modules/@fullcalendar/daygrid/main.js");
 /* harmony import */ var _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fullcalendar/timegrid */ "./node_modules/@fullcalendar/timegrid/main.js");
 /* harmony import */ var _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fullcalendar/interaction */ "./node_modules/@fullcalendar/interaction/main.js");
-/* harmony import */ var _fullcalendar_core_locales_all__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fullcalendar/core/locales-all */ "./node_modules/@fullcalendar/core/locales-all.js");
-/* harmony import */ var _EventModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./EventModal */ "./resources/js/components/EventModal.vue");
+/* harmony import */ var _EventModal_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./EventModal.vue */ "./resources/js/components/EventModal.vue");
 //
 //
 //
@@ -17222,16 +15582,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 
 
 
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  metaInfo: function metaInfo() {
+    return {
+      title: 'Calendar'
+    };
+  },
   components: {
     FullCalendar: _fullcalendar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    EventModal: _EventModal__WEBPACK_IMPORTED_MODULE_5__["default"]
+    EventModal: _EventModal_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
   },
   data: function data() {
     return {
@@ -17242,6 +15606,9 @@ __webpack_require__.r(__webpack_exports__);
         locale: Nova.config.fullcalendar_locale || 'en',
         dateClick: this.handleDateClick,
         eventClick: this.handleEventClick,
+        eventDrag: this.handleDrag,
+        eventDrop: this.handleDrop,
+        dayMaxEvents: true,
         headerToolbar: {
           left: 'prev,next today',
           center: 'title',
@@ -17253,7 +15620,8 @@ __webpack_require__.r(__webpack_exports__);
           second: '2-digit',
           hour12: false
         },
-        timeFormat: 'H(:mm)'
+        timeFormat: 'H(:mm)',
+        editable: true
       },
       currentEvent: null,
       currentDate: null,
@@ -17261,6 +15629,34 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
+    handleDrag: function handleDrag(date) {// console.log(date);
+    },
+    handleDrop: function handleDrop(requestDate) {
+      var _this = this;
+
+      console.log(requestDate);
+      Nova.request().put('/nova-vendor/nova-calendar/events/' + requestDate.event.id + '/update', {
+        title: requestDate.event.title,
+        start: moment.utc(requestDate.event.start).format('YYYY-MM-DD HH:mm:ss'),
+        end: moment.utc(requestDate.event.end).format('YYYY-MM-DD HH:mm:ss')
+      }).then(function (response) {
+        if (response.data.success) {
+          _this.$toasted.show('Event has been updated', {
+            type: 'success'
+          });
+
+          _this.$emit('refreshEvents');
+        } else if (response.data.error === true) {
+          _this.$toasted.show(response.data.message, {
+            type: 'error'
+          });
+        }
+      })["catch"](function (response) {
+        return _this.$toasted.show('Something went wrong', {
+          type: 'error'
+        });
+      });
+    },
     handleDateClick: function handleDateClick(date) {
       this.showModal = true;
       this.currentDate = date;
@@ -17274,6 +15670,8 @@ __webpack_require__.r(__webpack_exports__);
       this.currentEvent = null;
       this.currentDate = null;
     },
+    saveEvent: function saveEvent() {},
+    deleteEvent: function deleteEvent() {},
     refreshEvents: function refreshEvents() {
       this.$refs.fullCalendar.getApi().refetchEvents();
     }
@@ -17301,21 +15699,21 @@ Nova.booting(function (Vue, router, store) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/common/main.css":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/common/main.css ***!
-  \************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/common/main.css":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/common/main.css ***!
+  \*************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+var ___CSS_LOADER_EXPORT___ = _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\n/* classes attached to <body> */\n/* TODO: make fc-event selector work when calender in shadow DOM */\n.fc-not-allowed,\n.fc-not-allowed .fc-event { /* override events' custom cursors */\n  cursor: not-allowed;\n}\n\n/* TODO: not attached to body. attached to specific els. move */\n.fc-unselectable {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  -webkit-touch-callout: none;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n.fc {\n  /* layout of immediate children */\n  display: flex;\n  flex-direction: column;\n\n  font-size: 1em\n}\n.fc,\n  .fc *,\n  .fc *:before,\n  .fc *:after {\n    box-sizing: border-box;\n  }\n.fc table {\n    border-collapse: collapse;\n    border-spacing: 0;\n    font-size: 1em; /* normalize cross-browser */\n  }\n.fc th {\n    text-align: center;\n  }\n.fc th,\n  .fc td {\n    vertical-align: top;\n    padding: 0;\n  }\n.fc a[data-navlink] {\n    cursor: pointer;\n  }\n.fc a[data-navlink]:hover {\n    text-decoration: underline;\n  }\n.fc-direction-ltr {\n  direction: ltr;\n  text-align: left;\n}\n.fc-direction-rtl {\n  direction: rtl;\n  text-align: right;\n}\n.fc-theme-standard td,\n  .fc-theme-standard th {\n    border: 1px solid #ddd;\n    border: 1px solid var(--fc-border-color, #ddd);\n  }\n/* for FF, which doesn't expand a 100% div within a table cell. use absolute positioning */\n/* inner-wrappers are responsible for being absolute */\n/* TODO: best place for this? */\n.fc-liquid-hack td,\n  .fc-liquid-hack th {\n    position: relative;\n  }\n\n@font-face {\n  font-family: 'fcicons';\n  src: url(\"data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBfAAAAC8AAAAYGNtYXAXVtKNAAABHAAAAFRnYXNwAAAAEAAAAXAAAAAIZ2x5ZgYydxIAAAF4AAAFNGhlYWQUJ7cIAAAGrAAAADZoaGVhB20DzAAABuQAAAAkaG10eCIABhQAAAcIAAAALGxvY2ED4AU6AAAHNAAAABhtYXhwAA8AjAAAB0wAAAAgbmFtZXsr690AAAdsAAABhnBvc3QAAwAAAAAI9AAAACAAAwPAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADpBgPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAOAAAAAoACAACAAIAAQAg6Qb//f//AAAAAAAg6QD//f//AAH/4xcEAAMAAQAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAWIAjQKeAskAEwAAJSc3NjQnJiIHAQYUFwEWMjc2NCcCnuLiDQ0MJAz/AA0NAQAMJAwNDcni4gwjDQwM/wANIwz/AA0NDCMNAAAAAQFiAI0CngLJABMAACUBNjQnASYiBwYUHwEHBhQXFjI3AZ4BAA0N/wAMJAwNDeLiDQ0MJAyNAQAMIw0BAAwMDSMM4uINIwwNDQAAAAIA4gC3Ax4CngATACcAACUnNzY0JyYiDwEGFB8BFjI3NjQnISc3NjQnJiIPAQYUHwEWMjc2NCcB87e3DQ0MIw3VDQ3VDSMMDQ0BK7e3DQ0MJAzVDQ3VDCQMDQ3zuLcMJAwNDdUNIwzWDAwNIwy4twwkDA0N1Q0jDNYMDA0jDAAAAgDiALcDHgKeABMAJwAAJTc2NC8BJiIHBhQfAQcGFBcWMjchNzY0LwEmIgcGFB8BBwYUFxYyNwJJ1Q0N1Q0jDA0Nt7cNDQwjDf7V1Q0N1QwkDA0Nt7cNDQwkDLfWDCMN1Q0NDCQMt7gMIw0MDNYMIw3VDQ0MJAy3uAwjDQwMAAADAFUAAAOrA1UAMwBoAHcAABMiBgcOAQcOAQcOARURFBYXHgEXHgEXHgEzITI2Nz4BNz4BNz4BNRE0JicuAScuAScuASMFITIWFx4BFx4BFx4BFREUBgcOAQcOAQcOASMhIiYnLgEnLgEnLgE1ETQ2Nz4BNz4BNz4BMxMhMjY1NCYjISIGFRQWM9UNGAwLFQkJDgUFBQUFBQ4JCRULDBgNAlYNGAwLFQkJDgUFBQUFBQ4JCRULDBgN/aoCVgQIBAQHAwMFAQIBAQIBBQMDBwQECAT9qgQIBAQHAwMFAQIBAQIBBQMDBwQECASAAVYRGRkR/qoRGRkRA1UFBAUOCQkVDAsZDf2rDRkLDBUJCA4FBQUFBQUOCQgVDAsZDQJVDRkLDBUJCQ4FBAVVAgECBQMCBwQECAX9qwQJAwQHAwMFAQICAgIBBQMDBwQDCQQCVQUIBAQHAgMFAgEC/oAZEhEZGRESGQAAAAADAFUAAAOrA1UAMwBoAIkAABMiBgcOAQcOAQcOARURFBYXHgEXHgEXHgEzITI2Nz4BNz4BNz4BNRE0JicuAScuAScuASMFITIWFx4BFx4BFx4BFREUBgcOAQcOAQcOASMhIiYnLgEnLgEnLgE1ETQ2Nz4BNz4BNz4BMxMzFRQWMzI2PQEzMjY1NCYrATU0JiMiBh0BIyIGFRQWM9UNGAwLFQkJDgUFBQUFBQ4JCRULDBgNAlYNGAwLFQkJDgUFBQUFBQ4JCRULDBgN/aoCVgQIBAQHAwMFAQIBAQIBBQMDBwQECAT9qgQIBAQHAwMFAQIBAQIBBQMDBwQECASAgBkSEhmAERkZEYAZEhIZgBEZGREDVQUEBQ4JCRUMCxkN/asNGQsMFQkIDgUFBQUFBQ4JCBUMCxkNAlUNGQsMFQkJDgUEBVUCAQIFAwIHBAQIBf2rBAkDBAcDAwUBAgICAgEFAwMHBAMJBAJVBQgEBAcCAwUCAQL+gIASGRkSgBkSERmAEhkZEoAZERIZAAABAOIAjQMeAskAIAAAExcHBhQXFjI/ARcWMjc2NC8BNzY0JyYiDwEnJiIHBhQX4uLiDQ0MJAzi4gwkDA0N4uINDQwkDOLiDCQMDQ0CjeLiDSMMDQ3h4Q0NDCMN4uIMIw0MDOLiDAwNIwwAAAABAAAAAQAAa5n0y18PPPUACwQAAAAAANivOVsAAAAA2K85WwAAAAADqwNVAAAACAACAAAAAAAAAAEAAAPA/8AAAAQAAAAAAAOrAAEAAAAAAAAAAAAAAAAAAAALBAAAAAAAAAAAAAAAAgAAAAQAAWIEAAFiBAAA4gQAAOIEAABVBAAAVQQAAOIAAAAAAAoAFAAeAEQAagCqAOoBngJkApoAAQAAAAsAigADAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABAAcAAAABAAAAAAACAAcAYAABAAAAAAADAAcANgABAAAAAAAEAAcAdQABAAAAAAAFAAsAFQABAAAAAAAGAAcASwABAAAAAAAKABoAigADAAEECQABAA4ABwADAAEECQACAA4AZwADAAEECQADAA4APQADAAEECQAEAA4AfAADAAEECQAFABYAIAADAAEECQAGAA4AUgADAAEECQAKADQApGZjaWNvbnMAZgBjAGkAYwBvAG4Ac1ZlcnNpb24gMS4wAFYAZQByAHMAaQBvAG4AIAAxAC4AMGZjaWNvbnMAZgBjAGkAYwBvAG4Ac2ZjaWNvbnMAZgBjAGkAYwBvAG4Ac1JlZ3VsYXIAUgBlAGcAdQBsAGEAcmZjaWNvbnMAZgBjAGkAYwBvAG4Ac0ZvbnQgZ2VuZXJhdGVkIGJ5IEljb01vb24uAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=\") format('truetype');\n  font-weight: normal;\n  font-style: normal;\n}\n\n.fc-icon {\n  /* added for fc */\n  display: inline-block;\n  width: 1em;\n  height: 1em;\n  text-align: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'fcicons' !important;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.fc-icon-chevron-left:before {\n  content: \"\\e900\";\n}\n\n.fc-icon-chevron-right:before {\n  content: \"\\e901\";\n}\n\n.fc-icon-chevrons-left:before {\n  content: \"\\e902\";\n}\n\n.fc-icon-chevrons-right:before {\n  content: \"\\e903\";\n}\n\n.fc-icon-minus-square:before {\n  content: \"\\e904\";\n}\n\n.fc-icon-plus-square:before {\n  content: \"\\e905\";\n}\n\n.fc-icon-x:before {\n  content: \"\\e906\";\n}\n/*\nLots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css\n\nThese styles only apply when the standard-theme is activated.\nWhen it's NOT activated, the fc-button classes won't even be in the DOM.\n*/\n.fc {\n\n  /* reset */\n\n}\n.fc .fc-button {\n    border-radius: 0;\n    overflow: visible;\n    text-transform: none;\n    margin: 0;\n    font-family: inherit;\n    font-size: inherit;\n    line-height: inherit;\n  }\n.fc .fc-button:focus {\n    outline: 1px dotted;\n    outline: 5px auto -webkit-focus-ring-color;\n  }\n.fc .fc-button {\n    -webkit-appearance: button;\n  }\n.fc .fc-button:not(:disabled) {\n    cursor: pointer;\n  }\n.fc .fc-button::-moz-focus-inner {\n    padding: 0;\n    border-style: none;\n  }\n.fc {\n\n  /* theme */\n\n}\n.fc .fc-button {\n    display: inline-block;\n    font-weight: 400;\n    text-align: center;\n    vertical-align: middle;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    background-color: transparent;\n    border: 1px solid transparent;\n    padding: 0.4em 0.65em;\n    font-size: 1em;\n    line-height: 1.5;\n    border-radius: 0.25em;\n  }\n.fc .fc-button:hover {\n    text-decoration: none;\n  }\n.fc .fc-button:focus {\n    outline: 0;\n    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);\n  }\n.fc .fc-button:disabled {\n    opacity: 0.65;\n  }\n.fc {\n\n  /* \"primary\" coloring */\n\n}\n.fc .fc-button-primary {\n    color: #fff;\n    color: var(--fc-button-text-color, #fff);\n    background-color: #2C3E50;\n    background-color: var(--fc-button-bg-color, #2C3E50);\n    border-color: #2C3E50;\n    border-color: var(--fc-button-border-color, #2C3E50);\n  }\n.fc .fc-button-primary:hover {\n    color: #fff;\n    color: var(--fc-button-text-color, #fff);\n    background-color: #1e2b37;\n    background-color: var(--fc-button-hover-bg-color, #1e2b37);\n    border-color: #1a252f;\n    border-color: var(--fc-button-hover-border-color, #1a252f);\n  }\n.fc .fc-button-primary:disabled { /* not DRY */\n    color: #fff;\n    color: var(--fc-button-text-color, #fff);\n    background-color: #2C3E50;\n    background-color: var(--fc-button-bg-color, #2C3E50);\n    border-color: #2C3E50;\n    border-color: var(--fc-button-border-color, #2C3E50); /* overrides :hover */\n  }\n.fc .fc-button-primary:focus {\n    box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);\n  }\n.fc .fc-button-primary:not(:disabled):active,\n  .fc .fc-button-primary:not(:disabled).fc-button-active {\n    color: #fff;\n    color: var(--fc-button-text-color, #fff);\n    background-color: #1a252f;\n    background-color: var(--fc-button-active-bg-color, #1a252f);\n    border-color: #151e27;\n    border-color: var(--fc-button-active-border-color, #151e27);\n  }\n.fc .fc-button-primary:not(:disabled):active:focus,\n  .fc .fc-button-primary:not(:disabled).fc-button-active:focus {\n    box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);\n  }\n.fc {\n\n  /* icons within buttons */\n\n}\n.fc .fc-button .fc-icon {\n    vertical-align: middle;\n    font-size: 1.5em; /* bump up the size (but don't make it bigger than line-height of button, which is 1.5em also) */\n  }\n.fc .fc-button-group {\n    position: relative;\n    display: inline-flex;\n    vertical-align: middle;\n  }\n.fc .fc-button-group > .fc-button {\n    position: relative;\n    flex: 1 1 auto;\n  }\n.fc .fc-button-group > .fc-button:hover {\n    z-index: 1;\n  }\n.fc .fc-button-group > .fc-button:focus,\n  .fc .fc-button-group > .fc-button:active,\n  .fc .fc-button-group > .fc-button.fc-button-active {\n    z-index: 1;\n  }\n.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {\n    margin-left: -1px;\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0;\n  }\n.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child) {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n  }\n.fc-direction-rtl .fc-button-group > .fc-button:not(:first-child) {\n    margin-right: -1px;\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n  }\n.fc-direction-rtl .fc-button-group > .fc-button:not(:last-child) {\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0;\n  }\n.fc .fc-toolbar {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  }\n.fc .fc-toolbar.fc-header-toolbar {\n    margin-bottom: 1.5em;\n  }\n.fc .fc-toolbar.fc-footer-toolbar {\n    margin-top: 1.5em;\n  }\n.fc .fc-toolbar-title {\n    font-size: 1.75em;\n    margin: 0;\n  }\n.fc-direction-ltr .fc-toolbar > * > :not(:first-child) {\n    margin-left: .75em; /* space between */\n  }\n.fc-direction-rtl .fc-toolbar > * > :not(:first-child) {\n    margin-right: .75em; /* space between */\n  }\n.fc-direction-rtl .fc-toolbar-ltr { /* when the toolbar-chunk positioning system is explicitly left-to-right */\n    flex-direction: row-reverse;\n  }\n.fc .fc-scroller {\n    -webkit-overflow-scrolling: touch;\n    position: relative; /* for abs-positioned elements within */\n  }\n.fc .fc-scroller-liquid {\n    height: 100%;\n  }\n.fc .fc-scroller-liquid-absolute {\n    position: absolute;\n    top: 0;\n    right: 0;\n    left: 0;\n    bottom: 0;\n  }\n.fc .fc-scroller-harness {\n    position: relative;\n    overflow: hidden;\n    direction: ltr;\n      /* hack for chrome computing the scroller's right/left wrong for rtl. undone below... */\n      /* TODO: demonstrate in codepen */\n  }\n.fc .fc-scroller-harness-liquid {\n    height: 100%;\n  }\n.fc-direction-rtl .fc-scroller-harness > .fc-scroller { /* undo above hack */\n    direction: rtl;\n  }\n.fc-theme-standard .fc-scrollgrid {\n    border: 1px solid #ddd;\n    border: 1px solid var(--fc-border-color, #ddd); /* bootstrap does this. match */\n  }\n.fc .fc-scrollgrid,\n    .fc .fc-scrollgrid table { /* all tables (self included) */\n      width: 100%; /* because tables don't normally do this */\n      table-layout: fixed;\n    }\n.fc .fc-scrollgrid table { /* inner tables */\n      border-top-style: hidden;\n      border-left-style: hidden;\n      border-right-style: hidden;\n    }\n.fc .fc-scrollgrid {\n\n    border-collapse: separate;\n    border-right-width: 0;\n    border-bottom-width: 0;\n\n  }\n.fc .fc-scrollgrid-liquid {\n    height: 100%;\n  }\n.fc .fc-scrollgrid-section { /* a <tr> */\n    height: 1px /* better than 0, for firefox */\n\n  }\n.fc .fc-scrollgrid-section > td {\n      height: 1px; /* needs a height so inner div within grow. better than 0, for firefox */\n    }\n.fc .fc-scrollgrid-section table {\n      height: 1px;\n        /* for most browsers, if a height isn't set on the table, can't do liquid-height within cells */\n        /* serves as a min-height. harmless */\n    }\n.fc .fc-scrollgrid-section-liquid > td {\n      height: 100%; /* better than `auto`, for firefox */\n    }\n.fc .fc-scrollgrid-section > * {\n    border-top-width: 0;\n    border-left-width: 0;\n  }\n.fc .fc-scrollgrid-section-header > *,\n  .fc .fc-scrollgrid-section-footer > * {\n    border-bottom-width: 0;\n  }\n.fc .fc-scrollgrid-section-body table,\n  .fc .fc-scrollgrid-section-footer table {\n    border-bottom-style: hidden; /* head keeps its bottom border tho */\n  }\n.fc {\n\n  /* stickiness */\n\n}\n.fc .fc-scrollgrid-section-sticky > * {\n    background: #fff;\n    background: var(--fc-page-bg-color, #fff);\n    position: -webkit-sticky;\n    position: sticky;\n    z-index: 3; /* TODO: var */\n    /* TODO: box-shadow when sticking */\n  }\n.fc .fc-scrollgrid-section-header.fc-scrollgrid-section-sticky > * {\n    top: 0; /* because border-sharing causes a gap at the top */\n      /* TODO: give safari -1. has bug */\n  }\n.fc .fc-scrollgrid-section-footer.fc-scrollgrid-section-sticky > * {\n    bottom: 0; /* known bug: bottom-stickiness doesn't work in safari */\n  }\n.fc .fc-scrollgrid-sticky-shim { /* for horizontal scrollbar */\n    height: 1px; /* needs height to create scrollbars */\n    margin-bottom: -1px;\n  }\n.fc-sticky { /* no .fc wrap because used as child of body */\n  position: -webkit-sticky;\n  position: sticky;\n}\n.fc .fc-view-harness {\n    flex-grow: 1; /* because this harness is WITHIN the .fc's flexbox */\n    position: relative;\n  }\n.fc {\n\n  /* when the harness controls the height, make the view liquid */\n\n}\n.fc .fc-view-harness-active > .fc-view {\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n  }\n.fc .fc-col-header-cell-cushion {\n    display: inline-block; /* x-browser for when sticky (when multi-tier header) */\n    padding: 2px 4px;\n  }\n.fc .fc-bg-event,\n  .fc .fc-non-business,\n  .fc .fc-highlight {\n    /* will always have a harness with position:relative/absolute, so absolutely expand */\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n  }\n.fc .fc-non-business {\n    background: rgba(215, 215, 215, 0.3);\n    background: var(--fc-non-business-color, rgba(215, 215, 215, 0.3));\n  }\n.fc .fc-bg-event {\n    background: rgb(143, 223, 130);\n    background: var(--fc-bg-event-color, rgb(143, 223, 130));\n    opacity: 0.3;\n    opacity: var(--fc-bg-event-opacity, 0.3)\n  }\n.fc .fc-bg-event .fc-event-title {\n      margin: .5em;\n      font-size: .85em;\n      font-size: var(--fc-small-font-size, .85em);\n      font-style: italic;\n    }\n.fc .fc-highlight {\n    background: rgba(188, 232, 241, 0.3);\n    background: var(--fc-highlight-color, rgba(188, 232, 241, 0.3));\n  }\n.fc .fc-cell-shaded,\n  .fc .fc-day-disabled {\n    background: rgba(208, 208, 208, 0.3);\n    background: var(--fc-neutral-bg-color, rgba(208, 208, 208, 0.3));\n  }\n/* link resets */\n/* ---------------------------------------------------------------------------------------------------- */\na.fc-event,\na.fc-event:hover {\n  text-decoration: none;\n}\n/* cursor */\n.fc-event[href],\n.fc-event.fc-event-draggable {\n  cursor: pointer;\n}\n/* event text content */\n/* ---------------------------------------------------------------------------------------------------- */\n.fc-event .fc-event-main {\n    position: relative;\n    z-index: 2;\n  }\n/* dragging */\n/* ---------------------------------------------------------------------------------------------------- */\n.fc-event-dragging:not(.fc-event-selected) { /* MOUSE */\n    opacity: 0.75;\n  }\n.fc-event-dragging.fc-event-selected { /* TOUCH */\n    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);\n  }\n/* resizing */\n/* ---------------------------------------------------------------------------------------------------- */\n/* (subclasses should hone positioning for touch and non-touch) */\n.fc-event .fc-event-resizer {\n    display: none;\n    position: absolute;\n    z-index: 4;\n  }\n.fc-event:hover, /* MOUSE */\n.fc-event-selected { /* TOUCH */\n\n}\n.fc-event:hover .fc-event-resizer, .fc-event-selected .fc-event-resizer {\n    display: block;\n  }\n.fc-event-selected .fc-event-resizer {\n    border-radius: 4px;\n    border-radius: calc(var(--fc-event-resizer-dot-total-width, 8px) / 2);\n    border-width: 1px;\n    border-width: var(--fc-event-resizer-dot-border-width, 1px);\n    width: 8px;\n    width: var(--fc-event-resizer-dot-total-width, 8px);\n    height: 8px;\n    height: var(--fc-event-resizer-dot-total-width, 8px);\n    border-style: solid;\n    border-color: inherit;\n    background: #fff;\n    background: var(--fc-page-bg-color, #fff)\n\n    /* expand hit area */\n\n  }\n.fc-event-selected .fc-event-resizer:before {\n      content: '';\n      position: absolute;\n      top: -20px;\n      left: -20px;\n      right: -20px;\n      bottom: -20px;\n    }\n/* selecting (always TOUCH) */\n/* OR, focused by tab-index */\n/* (TODO: maybe not the best focus-styling for .fc-daygrid-dot-event) */\n/* ---------------------------------------------------------------------------------------------------- */\n.fc-event-selected,\n.fc-event:focus {\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)\n\n  /* expand hit area (subclasses should expand) */\n\n}\n.fc-event-selected:before, .fc-event:focus:before {\n    content: \"\";\n    position: absolute;\n    z-index: 3;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n  }\n.fc-event-selected,\n.fc-event:focus {\n\n  /* dimmer effect */\n\n}\n.fc-event-selected:after, .fc-event:focus:after {\n    content: \"\";\n    background: rgba(0, 0, 0, 0.25);\n    background: var(--fc-event-selected-overlay-color, rgba(0, 0, 0, 0.25));\n    position: absolute;\n    z-index: 1;\n\n    /* assume there's a border on all sides. overcome it. */\n    /* sometimes there's NOT a border, in which case the dimmer will go over */\n    /* an adjacent border, which looks fine. */\n    top: -1px;\n    left: -1px;\n    right: -1px;\n    bottom: -1px;\n  }\n/*\nA HORIZONTAL event\n*/\n.fc-h-event { /* allowed to be top-level */\n  display: block;\n  border: 1px solid #3788d8;\n  border: 1px solid var(--fc-event-border-color, #3788d8);\n  background-color: #3788d8;\n  background-color: var(--fc-event-bg-color, #3788d8)\n\n}\n.fc-h-event .fc-event-main {\n    color: #fff;\n    color: var(--fc-event-text-color, #fff);\n  }\n.fc-h-event .fc-event-main-frame {\n    display: flex; /* for make fc-event-title-container expand */\n  }\n.fc-h-event .fc-event-time {\n    max-width: 100%; /* clip overflow on this element */\n    overflow: hidden;\n  }\n.fc-h-event .fc-event-title-container { /* serves as a container for the sticky cushion */\n    flex-grow: 1;\n    flex-shrink: 1;\n    min-width: 0; /* important for allowing to shrink all the way */\n  }\n.fc-h-event .fc-event-title {\n    display: inline-block; /* need this to be sticky cross-browser */\n    vertical-align: top; /* for not messing up line-height */\n    left: 0;  /* for sticky */\n    right: 0; /* for sticky */\n    max-width: 100%; /* clip overflow on this element */\n    overflow: hidden;\n  }\n.fc-h-event.fc-event-selected:before {\n    /* expand hit area */\n    top: -10px;\n    bottom: -10px;\n  }\n/* adjust border and border-radius (if there is any) for non-start/end */\n.fc-direction-ltr .fc-daygrid-block-event:not(.fc-event-start),\n.fc-direction-rtl .fc-daygrid-block-event:not(.fc-event-end) {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n  border-left-width: 0;\n}\n.fc-direction-ltr .fc-daygrid-block-event:not(.fc-event-end),\n.fc-direction-rtl .fc-daygrid-block-event:not(.fc-event-start) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n  border-right-width: 0;\n}\n/* resizers */\n.fc-h-event:not(.fc-event-selected) .fc-event-resizer {\n  top: 0;\n  bottom: 0;\n  width: 8px;\n  width: var(--fc-event-resizer-thickness, 8px);\n}\n.fc-direction-ltr .fc-h-event:not(.fc-event-selected) .fc-event-resizer-start,\n.fc-direction-rtl .fc-h-event:not(.fc-event-selected) .fc-event-resizer-end {\n  cursor: w-resize;\n  left: -4px;\n  left: calc(-0.5 * var(--fc-event-resizer-thickness, 8px));\n}\n.fc-direction-ltr .fc-h-event:not(.fc-event-selected) .fc-event-resizer-end,\n.fc-direction-rtl .fc-h-event:not(.fc-event-selected) .fc-event-resizer-start {\n  cursor: e-resize;\n  right: -4px;\n  right: calc(-0.5 * var(--fc-event-resizer-thickness, 8px));\n}\n/* resizers for TOUCH */\n.fc-h-event.fc-event-selected .fc-event-resizer {\n  top: 50%;\n  margin-top: -4px;\n  margin-top: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));\n}\n.fc-direction-ltr .fc-h-event.fc-event-selected .fc-event-resizer-start,\n.fc-direction-rtl .fc-h-event.fc-event-selected .fc-event-resizer-end {\n  left: -4px;\n  left: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));\n}\n.fc-direction-ltr .fc-h-event.fc-event-selected .fc-event-resizer-end,\n.fc-direction-rtl .fc-h-event.fc-event-selected .fc-event-resizer-start {\n  right: -4px;\n  right: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));\n}\n.fc .fc-popover {\n    position: absolute;\n    z-index: 9999;\n    box-shadow: 0 2px 6px rgba(0,0,0,.15);\n  }\n.fc .fc-popover-header {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    padding: 3px 4px;\n  }\n.fc .fc-popover-title {\n    margin: 0 2px;\n  }\n.fc .fc-popover-close {\n    cursor: pointer;\n    opacity: 0.65;\n    font-size: 1.1em;\n  }\n.fc-theme-standard .fc-popover {\n    border: 1px solid #ddd;\n    border: 1px solid var(--fc-border-color, #ddd);\n    background: #fff;\n    background: var(--fc-page-bg-color, #fff);\n  }\n.fc-theme-standard .fc-popover-header {\n    background: rgba(208, 208, 208, 0.3);\n    background: var(--fc-neutral-bg-color, rgba(208, 208, 208, 0.3));\n  }\n", ""]);
 // Exports
@@ -17324,21 +15722,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n/* classes attached to <body> */\n/*
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/daygrid/main.css":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/daygrid/main.css ***!
-  \*************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/daygrid/main.css":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/daygrid/main.css ***!
+  \**************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+var ___CSS_LOADER_EXPORT___ = _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\n:root {\n  --fc-daygrid-event-dot-width: 8px;\n}\n/* help things clear margins of inner content */\n.fc-daygrid-day-frame,\n.fc-daygrid-day-events,\n.fc-daygrid-event-harness { /* for event top/bottom margins */\n}\n.fc-daygrid-day-frame:before, .fc-daygrid-day-events:before, .fc-daygrid-event-harness:before {\n  content: \"\";\n  clear: both;\n  display: table; }\n.fc-daygrid-day-frame:after, .fc-daygrid-day-events:after, .fc-daygrid-event-harness:after {\n  content: \"\";\n  clear: both;\n  display: table; }\n.fc .fc-daygrid-body { /* a <div> that wraps the table */\n    position: relative;\n    z-index: 1; /* container inner z-index's because <tr>s can't do it */\n  }\n.fc .fc-daygrid-day.fc-day-today {\n      background-color: rgba(255, 220, 40, 0.15);\n      background-color: var(--fc-today-bg-color, rgba(255, 220, 40, 0.15));\n    }\n.fc .fc-daygrid-day-frame {\n    position: relative;\n    min-height: 100%; /* seems to work better than `height` because sets height after rows/cells naturally do it */\n  }\n.fc {\n\n  /* cell top */\n\n}\n.fc .fc-daygrid-day-top {\n    display: flex;\n    flex-direction: row-reverse;\n  }\n.fc .fc-day-other .fc-daygrid-day-top {\n    opacity: 0.3;\n  }\n.fc {\n\n  /* day number (within cell top) */\n\n}\n.fc .fc-daygrid-day-number {\n    position: relative;\n    z-index: 4;\n    padding: 4px;\n  }\n.fc {\n\n  /* event container */\n\n}\n.fc .fc-daygrid-day-events {\n    margin-top: 1px; /* needs to be margin, not padding, so that available cell height can be computed */\n  }\n.fc {\n\n  /* positioning for balanced vs natural */\n\n}\n.fc .fc-daygrid-body-balanced .fc-daygrid-day-events {\n      position: absolute;\n      left: 0;\n      right: 0;\n    }\n.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {\n      position: relative; /* for containing abs positioned event harnesses */\n      min-height: 2em; /* in addition to being a min-height during natural height, equalizes the heights a little bit */\n    }\n.fc .fc-daygrid-body-natural { /* can coexist with -unbalanced */\n  }\n.fc .fc-daygrid-body-natural .fc-daygrid-day-events {\n      margin-bottom: 1em;\n    }\n.fc {\n\n  /* event harness */\n\n}\n.fc .fc-daygrid-event-harness {\n    position: relative;\n  }\n.fc .fc-daygrid-event-harness-abs {\n    position: absolute;\n    top: 0; /* fallback coords for when cannot yet be computed */\n    left: 0; /* */\n    right: 0; /* */\n  }\n.fc .fc-daygrid-bg-harness {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n  }\n.fc {\n\n  /* bg content */\n\n}\n.fc .fc-daygrid-day-bg .fc-non-business { z-index: 1 }\n.fc .fc-daygrid-day-bg .fc-bg-event { z-index: 2 }\n.fc .fc-daygrid-day-bg .fc-highlight { z-index: 3 }\n.fc {\n\n  /* events */\n\n}\n.fc .fc-daygrid-event {\n    z-index: 6;\n    margin-top: 1px;\n  }\n.fc .fc-daygrid-event.fc-event-mirror {\n    z-index: 7;\n  }\n.fc {\n\n  /* cell bottom (within day-events) */\n\n}\n.fc .fc-daygrid-day-bottom {\n    font-size: .85em;\n    padding: 2px 3px 0\n  }\n.fc .fc-daygrid-day-bottom:before {\n  content: \"\";\n  clear: both;\n  display: table; }\n.fc .fc-daygrid-more-link {\n    position: relative;\n    z-index: 4;\n    cursor: pointer;\n  }\n.fc {\n\n  /* week number (within frame) */\n\n}\n.fc .fc-daygrid-week-number {\n    position: absolute;\n    z-index: 5;\n    top: 0;\n    padding: 2px;\n    min-width: 1.5em;\n    text-align: center;\n    background-color: rgba(208, 208, 208, 0.3);\n    background-color: var(--fc-neutral-bg-color, rgba(208, 208, 208, 0.3));\n    color: #808080;\n    color: var(--fc-neutral-text-color, #808080);\n  }\n.fc {\n\n  /* popover */\n\n}\n.fc .fc-more-popover .fc-popover-body {\n    min-width: 220px;\n    padding: 10px;\n  }\n.fc-direction-ltr .fc-daygrid-event.fc-event-start,\n.fc-direction-rtl .fc-daygrid-event.fc-event-end {\n  margin-left: 2px;\n}\n.fc-direction-ltr .fc-daygrid-event.fc-event-end,\n.fc-direction-rtl .fc-daygrid-event.fc-event-start {\n  margin-right: 2px;\n}\n.fc-direction-ltr .fc-daygrid-week-number {\n    left: 0;\n    border-radius: 0 0 3px 0;\n  }\n.fc-direction-rtl .fc-daygrid-week-number {\n    right: 0;\n    border-radius: 0 0 0 3px;\n  }\n.fc-liquid-hack .fc-daygrid-day-frame {\n    position: static; /* will cause inner absolute stuff to expand to <td> */\n  }\n.fc-daygrid-event { /* make root-level, because will be dragged-and-dropped outside of a component root */\n  position: relative; /* for z-indexes assigned later */\n  white-space: nowrap;\n  border-radius: 3px; /* dot event needs this to when selected */\n  font-size: .85em;\n  font-size: var(--fc-small-font-size, .85em);\n}\n/* --- the rectangle (\"block\") style of event --- */\n.fc-daygrid-block-event .fc-event-time {\n    font-weight: bold;\n  }\n.fc-daygrid-block-event .fc-event-time,\n  .fc-daygrid-block-event .fc-event-title {\n    padding: 1px;\n  }\n/* --- the dot style of event --- */\n.fc-daygrid-dot-event {\n  display: flex;\n  align-items: center;\n  padding: 2px 0\n\n}\n.fc-daygrid-dot-event .fc-event-title {\n    flex-grow: 1;\n    flex-shrink: 1;\n    min-width: 0; /* important for allowing to shrink all the way */\n    overflow: hidden;\n    font-weight: bold;\n  }\n.fc-daygrid-dot-event:hover,\n  .fc-daygrid-dot-event.fc-event-mirror {\n    background: rgba(0, 0, 0, 0.1);\n  }\n.fc-daygrid-dot-event.fc-event-selected:before {\n    /* expand hit area */\n    top: -10px;\n    bottom: -10px;\n  }\n.fc-daygrid-event-dot { /* the actual dot */\n  margin: 0 4px;\n  box-sizing: content-box;\n  width: 0;\n  height: 0;\n  border: 4px solid #3788d8;\n  border: calc(var(--fc-daygrid-event-dot-width, 8px) / 2) solid var(--fc-event-border-color, #3788d8);\n  border-radius: 4px;\n  border-radius: calc(var(--fc-daygrid-event-dot-width, 8px) / 2);\n}\n/* --- spacing between time and title --- */\n.fc-direction-ltr .fc-daygrid-event .fc-event-time {\n    margin-right: 3px;\n  }\n.fc-direction-rtl .fc-daygrid-event .fc-event-time {\n    margin-left: 3px;\n  }\n", ""]);
 // Exports
@@ -17347,21 +15745,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n:root {\n  --fc-daygrid-event-dot-wi
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/timegrid/main.css":
-/*!**************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/timegrid/main.css ***!
-  \**************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/timegrid/main.css":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/timegrid/main.css ***!
+  \***************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+var ___CSS_LOADER_EXPORT___ = _laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\n/*\nA VERTICAL event\n*/\n\n.fc-v-event { /* allowed to be top-level */\n  display: block;\n  border: 1px solid #3788d8;\n  border: 1px solid var(--fc-event-border-color, #3788d8);\n  background-color: #3788d8;\n  background-color: var(--fc-event-bg-color, #3788d8)\n\n}\n\n.fc-v-event .fc-event-main {\n    color: #fff;\n    color: var(--fc-event-text-color, #fff);\n    height: 100%;\n  }\n\n.fc-v-event .fc-event-main-frame {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n  }\n\n.fc-v-event .fc-event-time {\n    flex-grow: 0;\n    flex-shrink: 0;\n    max-height: 100%;\n    overflow: hidden;\n  }\n\n.fc-v-event .fc-event-title-container { /* a container for the sticky cushion */\n    flex-grow: 1;\n    flex-shrink: 1;\n    min-height: 0; /* important for allowing to shrink all the way */\n  }\n\n.fc-v-event .fc-event-title { /* will have fc-sticky on it */\n    top: 0;\n    bottom: 0;\n    max-height: 100%; /* clip overflow */\n    overflow: hidden;\n  }\n\n.fc-v-event:not(.fc-event-start) {\n    border-top-width: 0;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0;\n  }\n\n.fc-v-event:not(.fc-event-end) {\n    border-bottom-width: 0;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0;\n  }\n\n.fc-v-event.fc-event-selected:before {\n    /* expand hit area */\n    left: -10px;\n    right: -10px;\n  }\n\n.fc-v-event {\n\n  /* resizer (mouse AND touch) */\n\n}\n\n.fc-v-event .fc-event-resizer-start {\n    cursor: n-resize;\n  }\n\n.fc-v-event .fc-event-resizer-end {\n    cursor: s-resize;\n  }\n\n.fc-v-event {\n\n  /* resizer for MOUSE */\n\n}\n\n.fc-v-event:not(.fc-event-selected) .fc-event-resizer {\n      height: 8px;\n      height: var(--fc-event-resizer-thickness, 8px);\n      left: 0;\n      right: 0;\n    }\n\n.fc-v-event:not(.fc-event-selected) .fc-event-resizer-start {\n      top: -4px;\n      top: calc(var(--fc-event-resizer-thickness, 8px) / -2);\n    }\n\n.fc-v-event:not(.fc-event-selected) .fc-event-resizer-end {\n      bottom: -4px;\n      bottom: calc(var(--fc-event-resizer-thickness, 8px) / -2);\n    }\n\n.fc-v-event {\n\n  /* resizer for TOUCH (when event is \"selected\") */\n\n}\n\n.fc-v-event.fc-event-selected .fc-event-resizer {\n      left: 50%;\n      margin-left: -4px;\n      margin-left: calc(var(--fc-event-resizer-dot-total-width, 8px) / -2);\n    }\n\n.fc-v-event.fc-event-selected .fc-event-resizer-start {\n      top: -4px;\n      top: calc(var(--fc-event-resizer-dot-total-width, 8px) / -2);\n    }\n\n.fc-v-event.fc-event-selected .fc-event-resizer-end {\n      bottom: -4px;\n      bottom: calc(var(--fc-event-resizer-dot-total-width, 8px) / -2);\n    }\n.fc .fc-timegrid .fc-daygrid-body { /* the all-day daygrid within the timegrid view */\n    z-index: 2; /* put above the timegrid-body so that more-popover is above everything. TODO: better solution */\n  }\n.fc .fc-timegrid-divider {\n    padding: 0 0 2px; /* browsers get confused when you set height. use padding instead */\n  }\n.fc .fc-timegrid-body {\n    position: relative;\n    z-index: 1; /* scope the z-indexes of slots and cols */\n    min-height: 100%; /* fill height always, even when slat table doesn't grow */\n  }\n.fc .fc-timegrid-axis-chunk { /* for advanced ScrollGrid */\n    position: relative /* offset parent for now-indicator-container */\n\n  }\n.fc .fc-timegrid-axis-chunk > table {\n      position: relative;\n      z-index: 1; /* above the now-indicator-container */\n    }\n.fc .fc-timegrid-slots {\n    position: relative;\n    z-index: 1;\n  }\n.fc .fc-timegrid-slot { /* a <td> */\n    height: 1.5em;\n    border-bottom: 0 /* each cell owns its top border */\n  }\n.fc .fc-timegrid-slot:empty:before {\n      content: '\\00a0'; /* make sure there's at least an empty space to create height for height syncing */\n    }\n.fc .fc-timegrid-slot-minor {\n    border-top-style: dotted;\n  }\n.fc .fc-timegrid-slot-label-cushion {\n    display: inline-block;\n    white-space: nowrap;\n  }\n.fc .fc-timegrid-slot-label {\n    vertical-align: middle; /* vertical align the slots */\n  }\n.fc {\n\n\n  /* slots AND axis cells (top-left corner of view including the \"all-day\" text) */\n\n}\n.fc .fc-timegrid-axis-cushion,\n  .fc .fc-timegrid-slot-label-cushion {\n    padding: 0 4px;\n  }\n.fc {\n\n\n  /* axis cells (top-left corner of view including the \"all-day\" text) */\n  /* vertical align is more complicated, uses flexbox */\n\n}\n.fc .fc-timegrid-axis-frame-liquid {\n    height: 100%; /* will need liquid-hack in FF */\n  }\n.fc .fc-timegrid-axis-frame {\n    overflow: hidden;\n    display: flex;\n    align-items: center; /* vertical align */\n    justify-content: flex-end; /* horizontal align. matches text-align below */\n  }\n.fc .fc-timegrid-axis-cushion {\n    max-width: 60px; /* limits the width of the \"all-day\" text */\n    flex-shrink: 0; /* allows text to expand how it normally would, regardless of constrained width */\n  }\n.fc-direction-ltr .fc-timegrid-slot-label-frame {\n    text-align: right;\n  }\n.fc-direction-rtl .fc-timegrid-slot-label-frame {\n    text-align: left;\n  }\n.fc-liquid-hack .fc-timegrid-axis-frame-liquid {\n  height: auto;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  }\n.fc .fc-timegrid-col.fc-day-today {\n      background-color: rgba(255, 220, 40, 0.15);\n      background-color: var(--fc-today-bg-color, rgba(255, 220, 40, 0.15));\n    }\n.fc .fc-timegrid-col-frame {\n    min-height: 100%; /* liquid-hack is below */\n    position: relative;\n  }\n.fc-media-screen.fc-liquid-hack .fc-timegrid-col-frame {\n  height: auto;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n    }\n.fc-media-screen .fc-timegrid-cols {\n    position: absolute; /* no z-index. children will decide and go above slots */\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0\n  }\n.fc-media-screen .fc-timegrid-cols > table {\n      height: 100%;\n    }\n.fc-media-screen .fc-timegrid-col-bg,\n  .fc-media-screen .fc-timegrid-col-events,\n  .fc-media-screen .fc-timegrid-now-indicator-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n  }\n.fc {\n\n  /* bg */\n\n}\n.fc .fc-timegrid-col-bg {\n    z-index: 2; /* TODO: kill */\n  }\n.fc .fc-timegrid-col-bg .fc-non-business { z-index: 1 }\n.fc .fc-timegrid-col-bg .fc-bg-event { z-index: 2 }\n.fc .fc-timegrid-col-bg .fc-highlight { z-index: 3 }\n.fc .fc-timegrid-bg-harness {\n    position: absolute; /* top/bottom will be set by JS */\n    left: 0;\n    right: 0;\n  }\n.fc {\n\n  /* fg events */\n  /* (the mirror segs are put into a separate container with same classname, */\n  /* and they must be after the normal seg container to appear at a higher z-index) */\n\n}\n.fc .fc-timegrid-col-events {\n    z-index: 3;\n    /* child event segs have z-indexes that are scoped within this div */\n  }\n.fc {\n\n  /* now indicator */\n\n}\n.fc .fc-timegrid-now-indicator-container {\n    bottom: 0;\n    overflow: hidden; /* don't let overflow of lines/arrows cause unnecessary scrolling */\n    /* z-index is set on the individual elements */\n  }\n.fc-direction-ltr .fc-timegrid-col-events {\n    margin: 0 2.5% 0 2px;\n  }\n.fc-direction-rtl .fc-timegrid-col-events {\n    margin: 0 2px 0 2.5%;\n  }\n.fc-timegrid-event-harness {\n  position: absolute /* top/left/right/bottom will all be set by JS */\n}\n.fc-timegrid-event-harness > .fc-timegrid-event {\n    position: absolute; /* absolute WITHIN the harness */\n    top: 0; /* for when not yet positioned */\n    bottom: 0; /* \" */\n    left: 0;\n    right: 0;\n  }\n.fc-timegrid-event-harness-inset .fc-timegrid-event,\n.fc-timegrid-event.fc-event-mirror,\n.fc-timegrid-more-link {\n  box-shadow: 0px 0px 0px 1px #fff;\n  box-shadow: 0px 0px 0px 1px var(--fc-page-bg-color, #fff);\n}\n.fc-timegrid-event,\n.fc-timegrid-more-link { /* events need to be root */\n  font-size: .85em;\n  font-size: var(--fc-small-font-size, .85em);\n  border-radius: 3px;\n}\n.fc-timegrid-event { /* events need to be root */\n  margin-bottom: 1px /* give some space from bottom */\n}\n.fc-timegrid-event .fc-event-main {\n    padding: 1px 1px 0;\n  }\n.fc-timegrid-event .fc-event-time {\n    white-space: nowrap;\n    font-size: .85em;\n    font-size: var(--fc-small-font-size, .85em);\n    margin-bottom: 1px;\n  }\n.fc-timegrid-event-short .fc-event-main-frame {\n    flex-direction: row;\n    overflow: hidden;\n  }\n.fc-timegrid-event-short .fc-event-time:after {\n    content: '\\00a0-\\00a0'; /* dash surrounded by non-breaking spaces */\n  }\n.fc-timegrid-event-short .fc-event-title {\n    font-size: .85em;\n    font-size: var(--fc-small-font-size, .85em)\n  }\n.fc-timegrid-more-link { /* does NOT inherit from fc-timegrid-event */\n  position: absolute;\n  z-index: 9999; /* hack */\n  color: inherit;\n  color: var(--fc-more-link-text-color, inherit);\n  background: #d0d0d0;\n  background: var(--fc-more-link-bg-color, #d0d0d0);\n  cursor: pointer;\n  margin-bottom: 1px; /* match space below fc-timegrid-event */\n}\n.fc-timegrid-more-link-inner { /* has fc-sticky */\n  padding: 3px 2px;\n  top: 0;\n}\n.fc-direction-ltr .fc-timegrid-more-link {\n    right: 0;\n  }\n.fc-direction-rtl .fc-timegrid-more-link {\n    left: 0;\n  }\n.fc {\n\n  /* line */\n\n}\n.fc .fc-timegrid-now-indicator-line {\n    position: absolute;\n    z-index: 4;\n    left: 0;\n    right: 0;\n    border-style: solid;\n    border-color: red;\n    border-color: var(--fc-now-indicator-color, red);\n    border-width: 1px 0 0;\n  }\n.fc {\n\n  /* arrow */\n\n}\n.fc .fc-timegrid-now-indicator-arrow {\n    position: absolute;\n    z-index: 4;\n    margin-top: -5px; /* vertically center on top coordinate */\n    border-style: solid;\n    border-color: red;\n    border-color: var(--fc-now-indicator-color, red);\n  }\n.fc-direction-ltr .fc-timegrid-now-indicator-arrow {\n    left: 0;\n\n    /* triangle pointing right. TODO: mixin */\n    border-width: 5px 0 5px 6px;\n    border-top-color: transparent;\n    border-bottom-color: transparent;\n  }\n.fc-direction-rtl .fc-timegrid-now-indicator-arrow {\n    right: 0;\n\n    /* triangle pointing left. TODO: mixin */\n    border-width: 5px 6px 5px 0;\n    border-top-color: transparent;\n    border-bottom-color: transparent;\n  }\n", ""]);
 // Exports
@@ -17370,33 +15768,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n/*\nA VERTICAL event\n*/\n\n.fc-v-ev
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nlabel[data-v-45f0835e] {\n    display: block;\n}\n.btn-wrapper[data-v-45f0835e] {\n    display: flex;\n    justify-content: flex-end;\n}\n.btn.delete-event[data-v-45f0835e] {\n    margin-right: auto;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js ***!
+  \******************************************************************************/
 /***/ ((module) => {
 
 
@@ -17600,7 +15975,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./main.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/common/main.css");
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./main.css */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/common/main.css");
 
             
 
@@ -17609,11 +15984,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -17629,7 +16004,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./main.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/daygrid/main.css");
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./main.css */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/daygrid/main.css");
 
             
 
@@ -17638,11 +16013,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -17658,7 +16033,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./main.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/timegrid/main.css");
+/* harmony import */ var _laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./main.css */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/@fullcalendar/timegrid/main.css");
 
             
 
@@ -17667,40 +16042,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css&":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_style_index_0_id_45f0835e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css&");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_style_index_0_id_45f0835e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_style_index_0_id_45f0835e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_main_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -18268,25 +16614,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _EventModal_vue_vue_type_template_id_45f0835e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EventModal.vue?vue&type=template&id=45f0835e&scoped=true& */ "./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&scoped=true&");
+/* harmony import */ var _EventModal_vue_vue_type_template_id_45f0835e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EventModal.vue?vue&type=template&id=45f0835e& */ "./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&");
 /* harmony import */ var _EventModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EventModal.vue?vue&type=script&lang=js& */ "./resources/js/components/EventModal.vue?vue&type=script&lang=js&");
-/* harmony import */ var _EventModal_vue_vue_type_style_index_0_id_45f0835e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css& */ "./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
-;
 
 
 /* normalize component */
-
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _EventModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _EventModal_vue_vue_type_template_id_45f0835e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
-  _EventModal_vue_vue_type_template_id_45f0835e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _EventModal_vue_vue_type_template_id_45f0835e___WEBPACK_IMPORTED_MODULE_0__.render,
+  _EventModal_vue_vue_type_template_id_45f0835e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
-  "45f0835e",
+  null,
   null
   
 )
@@ -18366,30 +16710,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css&":
-/*!*********************************************************************************************************!*\
-  !*** ./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css& ***!
-  \*********************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_style_index_0_id_45f0835e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=style&index=0&id=45f0835e&scoped=true&lang=css&");
-
-
-/***/ }),
-
-/***/ "./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&scoped=true&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&scoped=true& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e& ***!
+  \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_template_id_45f0835e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_template_id_45f0835e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_template_id_45f0835e___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_template_id_45f0835e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_template_id_45f0835e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EventModal.vue?vue&type=template&id=45f0835e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EventModal_vue_vue_type_template_id_45f0835e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EventModal.vue?vue&type=template&id=45f0835e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&");
 
 
 /***/ }),
@@ -18410,10 +16742,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&scoped=true&":
-/*!**********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EventModal.vue?vue&type=template&id=45f0835e& ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18428,160 +16760,251 @@ var render = function() {
   return _c("modal", {
     attrs: { classWhitelist: "flatpickr-calendar" },
     on: { "modal-close": _vm.handleClose },
-    scopedSlots: _vm._u(
-      [
-        {
-          key: "default",
-          fn: function(props) {
-            return _c(
-              "form",
-              {
-                staticClass: "bg-white rounded-lg shadow-lg overflow-hidden",
-                staticStyle: { width: "460px" },
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    return _vm.handleSave.apply(null, arguments)
-                  }
+    scopedSlots: _vm._u([
+      {
+        key: "default",
+        fn: function(props) {
+          return _c(
+            "form",
+            {
+              staticClass: "bg-white rounded-lg shadow-lg overflow-hidden",
+              staticStyle: { width: "460px" },
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.handleConfirm.apply(null, arguments)
                 }
-              },
-              [
-                _vm._t(
-                  "default",
-                  function() {
-                    return [
-                      _c(
-                        "div",
-                        { staticClass: "p-8" },
-                        [
-                          !_vm.currentEvent
-                            ? _c(
-                                "heading",
-                                { staticClass: "mb-6", attrs: { level: 2 } },
-                                [_vm._v(_vm._s(_vm.__("Create Event")))]
-                              )
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _vm.currentEvent
-                            ? _c(
-                                "heading",
-                                { staticClass: "mb-6", attrs: { level: 2 } },
-                                [_vm._v(_vm._s(_vm.__("Edit Event")))]
-                              )
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "border-b border-40 pb-4" },
-                            [
-                              _c(
-                                "label",
-                                {
-                                  staticClass: "mb-2 text-80 leading-tight",
-                                  attrs: { for: "title" }
-                                },
-                                [_vm._v("Title:")]
-                              ),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.title,
-                                    expression: "title"
-                                  }
-                                ],
-                                staticClass:
-                                  "w-full form-control form-input form-input-bordered",
-                                attrs: { name: "title" },
-                                domProps: { value: _vm.title },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.title = $event.target.value
-                                  }
-                                }
-                              })
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "border-b border-40 py-4" },
-                            [
-                              _c(
-                                "label",
-                                {
-                                  staticClass: "mb-2 text-80 leading-tight",
-                                  attrs: { for: "start" }
-                                },
-                                [_vm._v("Start:")]
-                              ),
-                              _vm._v(" "),
-                              _c("date-time-picker", {
-                                staticClass:
-                                  "w-full form-control form-input form-input-bordered",
-                                attrs: { name: "start", autocomplete: "off" },
-                                on: { change: _vm.changeStart },
-                                model: {
-                                  value: _vm.start,
-                                  callback: function($$v) {
-                                    _vm.start = $$v
-                                  },
-                                  expression: "start"
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "border-b border-40 py-4" },
-                            [
-                              _c(
-                                "label",
-                                {
-                                  staticClass: "mb-2 text-80",
-                                  attrs: { for: "end" }
-                                },
-                                [_vm._v("End:")]
-                              ),
-                              _vm._v(" "),
-                              _c("date-time-picker", {
-                                staticClass:
-                                  "w-full form-control form-input form-input-bordered",
-                                attrs: { name: "end", autocomplete: "off" },
-                                on: { change: _vm.changeEnd },
-                                model: {
-                                  value: _vm.end,
-                                  callback: function($$v) {
-                                    _vm.end = $$v
-                                  },
-                                  expression: "end"
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
+              }
+            },
+            [
+              _c(
+                "div",
+                { staticClass: "p-8" },
+                [
+                  !_vm.currentEvent
+                    ? _c(
+                        "heading",
+                        { staticClass: "mb-6", attrs: { level: 2 } },
+                        [_vm._v(_vm._s(_vm.__("Create Event")))]
                       )
-                    ]
-                  },
-                  { uppercaseMode: _vm.uppercaseMode, mode: _vm.mode }
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "btn-wrapper bg-30 px-6 py-3" }, [
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.currentEvent
+                    ? _c(
+                        "heading",
+                        { staticClass: "mb-6", attrs: { level: 2 } },
+                        [_vm._v(_vm._s(_vm.__("Edit Event")))]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "border-b border-40 pb-4" }, [
+                    _c(
+                      "label",
+                      { staticClass: "block mb-2 text-80 leading-tight" },
+                      [_vm._v("Title:")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.title,
+                          expression: "title"
+                        }
+                      ],
+                      staticClass:
+                        "w-full form-control form-input form-input-bordered",
+                      attrs: { name: "title" },
+                      domProps: { value: _vm.title },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.title = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "border-b border-40 py-4" }, [
+                    _c("label", { staticClass: "block mb-2 text-80" }, [
+                      _vm._v("Model:")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.eventable_type,
+                            expression: "eventable_type"
+                          }
+                        ],
+                        staticClass:
+                          "w-full form-control form-input form-input-bordered",
+                        attrs: { id: "eventable_type" },
+                        on: {
+                          change: [
+                            function($event) {
+                              var $$selectedVal = Array.prototype.filter
+                                .call($event.target.options, function(o) {
+                                  return o.selected
+                                })
+                                .map(function(o) {
+                                  var val = "_value" in o ? o._value : o.value
+                                  return val
+                                })
+                              _vm.eventable_type = $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            },
+                            _vm.getEventableItems
+                          ]
+                        }
+                      },
+                      [
+                        _c("option", { attrs: { value: "" } }, [
+                          _vm._v("Please select one model")
+                        ]),
+                        _vm._v(" "),
+                        _vm._l(_vm.eventables, function(value) {
+                          return _c("option", { domProps: { value: value } }, [
+                            _vm._v(_vm._s(value))
+                          ])
+                        })
+                      ],
+                      2
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm.eventable_type
+                    ? _c("div", { staticClass: "border-b border-40 py-4" }, [
+                        _c("label", { staticClass: "block mb-2 text-80" }, [
+                          _vm._v("Model Item:")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.eventable_id,
+                                expression: "eventable_id"
+                              }
+                            ],
+                            staticClass:
+                              "w-full form-control form-input form-input-bordered",
+                            attrs: { id: "eventable_type" },
+                            on: {
+                              change: function($event) {
+                                var $$selectedVal = Array.prototype.filter
+                                  .call($event.target.options, function(o) {
+                                    return o.selected
+                                  })
+                                  .map(function(o) {
+                                    var val = "_value" in o ? o._value : o.value
+                                    return val
+                                  })
+                                _vm.eventable_id = $event.target.multiple
+                                  ? $$selectedVal
+                                  : $$selectedVal[0]
+                              }
+                            }
+                          },
+                          [
+                            _c("option", { attrs: { value: "" } }, [
+                              _vm._v(
+                                "Please select one from " +
+                                  _vm._s(_vm.eventable_type)
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _vm._l(_vm.eventable_items, function(value) {
+                              return _c(
+                                "option",
+                                {
+                                  domProps: { value: Object.values(value)[0] }
+                                },
+                                [_vm._v(_vm._s(Object.values(value)[1]))]
+                              )
+                            })
+                          ],
+                          2
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "border-b border-40 py-4" },
+                    [
+                      _c(
+                        "label",
+                        { staticClass: "block mb-2 text-80 leading-tight" },
+                        [_vm._v("Start:")]
+                      ),
+                      _vm._v(" "),
+                      _c("date-time-picker", {
+                        staticClass:
+                          "w-full form-control form-input form-input-bordered",
+                        attrs: { name: "start", autocomplete: "off" },
+                        on: { change: _vm.changeStart },
+                        model: {
+                          value: _vm.start,
+                          callback: function($$v) {
+                            _vm.start = $$v
+                          },
+                          expression: "start"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "border-b border-40 py-4" },
+                    [
+                      _c("label", { staticClass: "block mb-2 text-80" }, [
+                        _vm._v("End:")
+                      ]),
+                      _vm._v(" "),
+                      _c("date-time-picker", {
+                        staticClass:
+                          "w-full form-control form-input form-input-bordered",
+                        attrs: { name: "end", autocomplete: "off" },
+                        on: { change: _vm.changeEnd },
+                        model: {
+                          value: _vm.end,
+                          callback: function($$v) {
+                            _vm.end = $$v
+                          },
+                          expression: "end"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "flex justify-between bg-30 px-6 py-3" },
+                [
                   _vm.currentEvent
                     ? _c(
                         "button",
                         {
                           staticClass:
-                            "btn btn-default btn-danger delete-event",
+                            "btn btn-default btn-danger flex justify-center items-center",
                           attrs: { type: "button" },
                           on: {
                             click: function($event) {
@@ -18600,8 +17023,7 @@ var render = function() {
                                 width: "20",
                                 height: "20",
                                 viewBox: "0 0 20 20",
-                                "aria-labelledby": "delete",
-                                role: "presentation"
+                                "aria-labelledby": "delete"
                               }
                             },
                             [
@@ -18618,46 +17040,56 @@ var render = function() {
                       )
                     : _vm._e(),
                   _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn text-80 font-normal h-9 px-3 btn-link",
-                      attrs: { type: "button" },
-                      on: {
-                        click: function($event) {
-                          $event.preventDefault()
-                          return _vm.handleClose.apply(null, arguments)
+                  _c("div", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "btn text-80 font-normal h-9 px-3 btn-link",
+                        attrs: { type: "button" },
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.handleClose.apply(null, arguments)
+                          }
                         }
-                      }
-                    },
-                    [_vm._v(_vm._s(_vm.__("Cancel")))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      ref: "saveButton",
-                      staticClass: "btn btn-default btn-primary ml-3",
-                      attrs: { type: "submit" },
-                      on: {
-                        click: function($event) {
-                          $event.preventDefault()
-                          return _vm.handleSave.apply(null, arguments)
+                      },
+                      [
+                        _vm._v(
+                          "\n          " +
+                            _vm._s(_vm.__("Cancel")) +
+                            "\n        "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        ref: "saveButton",
+                        staticClass: "btn btn-default btn-primary ml-3",
+                        attrs: { type: "submit" },
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.handleSave.apply(null, arguments)
+                          }
                         }
-                      }
-                    },
-                    [_vm._v(_vm._s(_vm.__("Save")))]
-                  )
-                ])
-              ],
-              2
-            )
-          }
+                      },
+                      [
+                        _vm._v(
+                          "\n          " + _vm._s(_vm.__("Save")) + "\n        "
+                        )
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ]
+          )
         }
-      ],
-      null,
-      true
-    )
+      }
+    ])
   })
 }
 var staticRenderFns = []
@@ -18702,7 +17134,7 @@ var render = function() {
         { attrs: { name: "fade" } },
         [
           _vm.showModal
-            ? _c("EventModal", {
+            ? _c("event-modal", {
                 attrs: {
                   currentEvent: _vm.currentEvent,
                   currentDate: _vm.currentDate
@@ -31006,8 +29438,8 @@ Vue.compile = compileToFunctions;
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/dist/js/tool": 0,
-/******/ 			"dist/css/tool": 0
+/******/ 			"/js/tool": 0,
+/******/ 			"css/tool": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -31057,8 +29489,8 @@ Vue.compile = compileToFunctions;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["dist/css/tool"], () => (__webpack_require__("./resources/js/tool.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/css/tool"], () => (__webpack_require__("./resources/sass/tool.sass")))
+/******/ 	__webpack_require__.O(undefined, ["css/tool"], () => (__webpack_require__("./resources/js/tool.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/tool"], () => (__webpack_require__("./resources/sass/tool.sass")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

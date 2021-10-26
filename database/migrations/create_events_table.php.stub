@@ -17,8 +17,10 @@ class CreateEventsTable extends Migration
             $table->id();
             $table->string('google_calendar_id')->nullable();
             $table->string('title');
+            $table->string('color')->nullable();
             $table->timestamp('start')->nullable();
             $table->timestamp('end')->nullable();
+            $table->morphs('eventable');
             $table->timestamps();
         });
     }

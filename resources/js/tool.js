@@ -1,4 +1,4 @@
-import Tool from '@/components/Tool';
+import Tool from "@/components/Tool";
 
 Nova.booting((Vue, router, store) => {
   router.addRoutes([
