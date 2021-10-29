@@ -67,6 +67,12 @@ class EventsController
     public function update(EventUpdateRequest $request, $eventId) {
         $event = Event::findOrFail($eventId);
 
+        $eventable_type = $request->input('eventable_type');
+
+        $request->merge([
+            'eventable_type' => (config('nova-calendar.eventable_types')[$eventable_type])['path'],
+        ]);
+
         $event->update($request->input());
 
         return response()->json([

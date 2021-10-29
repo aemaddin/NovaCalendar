@@ -15416,6 +15416,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['currentEvent', 'currentDate'],
   data: function data() {
@@ -15427,7 +15431,7 @@ __webpack_require__.r(__webpack_exports__);
       display_field: 'title',
       eventable_id: null,
       start: moment(this.currentEvent !== null ? this.currentEvent.event.start : this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
-      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).format('YYYY-MM-DD HH:mm:ss')
+      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).endOf('day').format('YYYY-MM-DD HH:mm:ss')
     };
   },
   methods: {
@@ -15441,7 +15445,10 @@ __webpack_require__.r(__webpack_exports__);
     getEventableItems: function getEventableItems() {
       var _this2 = this;
 
-      this.eventable_id = 1;
+      if (!this.eventable_id) {
+        this.eventable_id = 1;
+      }
+
       Nova.request().get('/nova-vendor/nova-calendar/eventables/' + this.eventable_type).then(function (response) {
         _this2.eventable_items = response.data;
       });
@@ -15512,13 +15519,7 @@ __webpack_require__.r(__webpack_exports__);
           });
         });
       } else if (this.currentEvent !== null) {
-        Nova.request().put('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/update', {
-          title: this.title,
-          start: moment.utc(moment(this.start)),
-          // convert time to utc before save it
-          end: moment.utc(moment(this.end)) // convert time to utc before save it
-
-        }).then(function (response) {
+        Nova.request().put('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/update', data).then(function (response) {
           if (response.data.success) {
             _this4.$toasted.show('Event has been updated', {
               type: 'success'
@@ -15538,10 +15539,19 @@ __webpack_require__.r(__webpack_exports__);
           });
         });
       }
+    },
+    getEventableFromCurrentEvent: function getEventableFromCurrentEvent() {
+      this.eventable_type = this.currentEvent.event._def.extendedProps.eventable_name;
+      this.eventable_id = this.currentEvent.event._def.extendedProps.eventable_id;
+      this.getEventableItems();
     }
   },
   mounted: function mounted() {
     this.getEventables();
+
+    if (this.currentEvent) {
+      this.getEventableFromCurrentEvent();
+    }
   }
 });
 
@@ -15637,6 +15647,8 @@ __webpack_require__.r(__webpack_exports__);
       console.log(requestDate);
       Nova.request().put('/nova-vendor/nova-calendar/events/' + requestDate.event.id + '/update', {
         title: requestDate.event.title,
+        eventable_type: requestDate.event._def.extendedProps.eventable_name,
+        eventable_id: requestDate.event._def.extendedProps.eventable_id,
         start: moment.utc(requestDate.event.start).format('YYYY-MM-DD HH:mm:ss'),
         end: moment.utc(requestDate.event.end).format('YYYY-MM-DD HH:mm:ss')
       }).then(function (response) {
@@ -15652,7 +15664,7 @@ __webpack_require__.r(__webpack_exports__);
           });
         }
       })["catch"](function (response) {
-        return _this.$toasted.show('Something went wrong', {
+        return _this.$toasted.show(response.data.message, {
           type: 'error'
         });
       });
@@ -16931,7 +16943,12 @@ var render = function() {
                                 {
                                   domProps: { value: Object.values(value)[0] }
                                 },
-                                [_vm._v(_vm._s(Object.values(value)[1]))]
+                                [
+                                  _vm._v(
+                                    _vm._s(Object.values(value)[1]) +
+                                      "\n          "
+                                  )
+                                ]
                               )
                             })
                           ],

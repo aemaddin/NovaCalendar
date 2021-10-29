@@ -14,7 +14,8 @@
         </div>
         <div class="border-b border-40 py-4">
           <label class="block mb-2 text-80">Model:</label>
-          <select v-model="eventable_type" @change="getEventableItems" class="w-full form-control form-input form-input-bordered" id="eventable_type">
+          <select v-model="eventable_type" @change="getEventableItems"
+                  class="w-full form-control form-input form-input-bordered" id="eventable_type">
             <option value="">Please select one model</option>
             <option v-for="value in eventables" :value="value">{{ value }}</option>
           </select>
@@ -23,7 +24,10 @@
           <label class="block mb-2 text-80">Model Item:</label>
           <select v-model="eventable_id" class="w-full form-control form-input form-input-bordered" id="eventable_type">
             <option value="">Please select one from {{ eventable_type }}</option>
-            <option v-for="value in eventable_items" :value="Object.values(value)[0]">{{ Object.values(value)[1] }}</option>
+            <option v-for="value in eventable_items" :value="Object.values(value)[0]">{{
+                Object.values(value)[1]
+              }}
+            </option>
           </select>
         </div>
         <div class="border-b border-40 py-4">
@@ -74,7 +78,7 @@ export default {
       display_field: 'title',
       eventable_id: null,
       start: moment(this.currentEvent !== null ? this.currentEvent.event.start : this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
-      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).format('YYYY-MM-DD HH:mm:ss')
+      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).endOf('day').format('YYYY-MM-DD HH:mm:ss')
     }
   },
   methods: {
@@ -85,7 +89,9 @@ export default {
           });
     },
     getEventableItems() {
-      this.eventable_id = 1;
+      if (!this.eventable_id) {
+        this.eventable_id = 1;
+      }
       Nova.request().get('/nova-vendor/nova-calendar/eventables/' + this.eventable_type)
           .then(response => {
             this.eventable_items = response.data
@@ -139,11 +145,7 @@ export default {
             .catch(response => this.$toasted.show('Something went wrong', {type: 'error'}));
       } else if (this.currentEvent !== null) {
         Nova.request()
-            .put('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/update',  {
-              title: this.title,
-              start: moment.utc(moment(this.start)), // convert time to utc before save it
-              end: moment.utc(moment(this.end)), // convert time to utc before save it
-            })
+            .put('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/update', data)
             .then(response => {
               if (response.data.success) {
                 this.$toasted.show('Event has been updated', {type: 'success'});
@@ -156,9 +158,17 @@ export default {
             .catch(response => this.$toasted.show('Something went wrong', {type: 'error'}));
       }
     },
+    getEventableFromCurrentEvent() {
+      this.eventable_type = this.currentEvent.event._def.extendedProps.eventable_name;
+      this.eventable_id = this.currentEvent.event._def.extendedProps.eventable_id;
+      this.getEventableItems();
+    }
   },
   mounted() {
     this.getEventables();
+    if (this.currentEvent) {
+      this.getEventableFromCurrentEvent();
+    }
   }
 }
 </script>

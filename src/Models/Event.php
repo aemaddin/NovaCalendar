@@ -2,6 +2,7 @@
 
 namespace Asciisd\NovaCalendar\Models;
 
+use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +15,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Event extends Model
 {
+    protected $appends = ['eventable_name'];
+
     protected $casts = [
         'start' => 'datetime',
         'end'   => 'datetime',
@@ -44,5 +47,9 @@ class Event extends Model
         }
 
         return $query;
+    }
+
+    public function getEventableNameAttribute() {
+        return Str::ucfirst($this->eventable()->first()->getTable());
     }
 }

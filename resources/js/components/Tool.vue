@@ -76,6 +76,8 @@ export default {
       Nova.request()
           .put('/nova-vendor/nova-calendar/events/' + requestDate.event.id + '/update', {
             title: requestDate.event.title,
+            eventable_type: requestDate.event._def.extendedProps.eventable_name,
+            eventable_id: requestDate.event._def.extendedProps.eventable_id,
             start: moment.utc(requestDate.event.start).format('YYYY-MM-DD HH:mm:ss'),
             end: moment.utc(requestDate.event.end).format('YYYY-MM-DD HH:mm:ss'),
           })
@@ -87,7 +89,7 @@ export default {
               this.$toasted.show(response.data.message, {type: 'error'});
             }
           })
-          .catch(response => this.$toasted.show('Something went wrong', {type: 'error'}));
+          .catch(response => this.$toasted.show(response.data.message, {type: 'error'}));
     },
     handleDateClick(date) {
       this.showModal = true;

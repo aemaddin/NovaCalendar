@@ -22,9 +22,11 @@ class EventUpdateRequest extends FormRequest
      */
     public function rules() {
         return [
-            'title' => 'required',
-            'start' => 'required|date',
-            'end'   => 'required|date|after_or_equal:start',
+            'title'          => 'required',
+            'start'          => 'required|date',
+            'eventable_id'   => 'required',
+            'eventable_type' => 'required',
+            'end'            => 'required|date|after_or_equal:start',
         ];
     }
 }
