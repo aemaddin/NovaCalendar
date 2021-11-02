@@ -23,6 +23,7 @@ import FullCalendar from '@fullcalendar/vue';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import listPlugin from '@fullcalendar/list';
 import EventModal from './EventModal.vue';
 
 export default {
@@ -39,18 +40,28 @@ export default {
     return {
       calendarOptions: {
         events: '/nova-vendor/nova-calendar/events',
-        plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
+        plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin, listPlugin],
         initialView: 'dayGridMonth',
         locale: Nova.config.fullcalendar_locale || 'en',
         dateClick: this.handleDateClick,
         eventClick: this.handleEventClick,
         eventDrag: this.handleDrag,
         eventDrop: this.handleDrop,
+        eventChange: this.handleChange,
+        eventsSet: this.handleChange,
+        eventResize: this.handleDrop,
         dayMaxEvents: true,
+        eventResizableFromStart: true,
+        editable: true,
+        selectable: true,
+        selectMirror: true,
+        weekends: true,
+        navLinks: true,
+        nowIndicator: true,
         headerToolbar: {
           left: 'prev,next today',
           center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay'
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
         },
         eventTimeFormat: {
           hour: '2-digit',
@@ -59,7 +70,6 @@ export default {
           hour12: false
         },
         timeFormat: 'H(:mm)',
-        editable: true
       },
       currentEvent: null,
       currentDate: null,
@@ -69,10 +79,8 @@ export default {
   methods: {
     handleDrag(date) {
 
-      // console.log(date);
     },
     handleDrop(requestDate) {
-      console.log(requestDate)
       Nova.request()
           .put('/nova-vendor/nova-calendar/events/' + requestDate.event.id + '/update', {
             title: requestDate.event.title,
@@ -84,12 +92,18 @@ export default {
           .then(response => {
             if (response.data.success) {
               this.$toasted.show('Event has been updated', {type: 'success'});
-              this.$emit('refreshEvents');
             } else if (response.data.error === true) {
               this.$toasted.show(response.data.message, {type: 'error'});
             }
+            this.$emit('refreshEvents');
           })
-          .catch(response => this.$toasted.show(response.data.message, {type: 'error'}));
+          .catch(response => {
+            requestDate.revert();
+            this.$toasted.show(response.data.message, {type: 'error'})
+          });
+    },
+    handleChange(info) {
+      //
     },
     handleDateClick(date) {
       this.showModal = true;

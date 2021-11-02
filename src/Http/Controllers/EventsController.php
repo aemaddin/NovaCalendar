@@ -38,30 +38,27 @@ class EventsController
     }
 
     public function store(EventRequest $request) {
+        $new_event = $this->getModelFromRequest($request)
+                          ->events()
+                          ->save(Event::make([
+                              'title' => $request->title,
+                              'start' => $request->start,
+                              'end'   => $request->end,
+                          ]));
+
+        return response()->json([
+            'success' => (bool) $new_event,
+            'event'   => $new_event,
+        ]);
+    }
+
+    public function getModelFromRequest(EventRequest $request) {
         $eventable_type = $request->input('eventable_type');
         $eventable_id   = $request->input('eventable_id');
 
         $eventable = config('nova-calendar.eventable_types')[$eventable_type];
 
-        $model     = $eventable['path']::find($eventable_id);
-        $new_event = $model->events()->save(
-            Event::make([
-                'title' => $request->title,
-                'start' => $request->start,
-                'end'   => $request->end,
-            ])
-        );
-        if($new_event) {
-            return response()->json([
-                'success' => true,
-                'event'   => $new_event,
-            ]);
-        }
-
-        return response()->json([
-            'success' => false,
-            'event'   => $new_event,
-        ]);
+        return $eventable['path']::find($eventable_id);
     }
 
     public function update(EventUpdateRequest $request, $eventId) {

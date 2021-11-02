@@ -78,7 +78,7 @@ export default {
       display_field: 'title',
       eventable_id: null,
       start: moment(this.currentEvent !== null ? this.currentEvent.event.start : this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
-      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).endOf('day').format('YYYY-MM-DD HH:mm:ss')
+      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).add(1, 'hour').format('YYYY-MM-DD HH:mm:ss')
     }
   },
   methods: {
@@ -119,8 +119,7 @@ export default {
               this.$emit('close');
               this.$emit('refreshEvents');
             }
-          })
-          .catch(response => this.$toasted.show('Something went wrong', {type: 'error'}));
+          });
     },
     handleSave() {
       let data = {
@@ -141,8 +140,7 @@ export default {
               } else if (response.data.error === true) {
                 this.$toasted.show(response.data.message, {type: 'error'});
               }
-            })
-            .catch(response => this.$toasted.show('Something went wrong', {type: 'error'}));
+            });
       } else if (this.currentEvent !== null) {
         Nova.request()
             .put('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/update', data)
@@ -154,8 +152,7 @@ export default {
               } else if (response.data.error === true) {
                 this.$toasted.show(response.data.message, {type: 'error'});
               }
-            })
-            .catch(response => this.$toasted.show('Something went wrong', {type: 'error'}));
+            });
       }
     },
     getEventableFromCurrentEvent() {

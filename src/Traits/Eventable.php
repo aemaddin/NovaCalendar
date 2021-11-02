@@ -8,18 +8,18 @@ use Asciisd\NovaCalendar\Models\Event;
 trait Eventable
 {
     /**
-     * Get all of the model's events.
+     * Get all the model's events.
      */
     public function events() {
         return $this->morphMany(Event::class, 'eventable');
     }
 
-    public function color() {
+    public function color(): string {
         $conf = config("nova-calendar.eventable_types.{$this->getModelName()}");
         return $conf['colors'][$this->{$conf['color_field']}] ?? '#0070d3';
     }
 
-    public function getModelName() {
+    public function getModelName(): string {
         return Str::ucfirst($this->getTable());
     }
 }
