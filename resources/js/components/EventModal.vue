@@ -77,8 +77,8 @@ export default {
       eventable_type: null,
       display_field: 'title',
       eventable_id: null,
-      start: moment(this.currentEvent !== null ? this.currentEvent.event.start : this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
-      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).add(1, 'hour').format('YYYY-MM-DD HH:mm:ss')
+      start: this.currentEvent !== null ? moment(this.currentEvent.event.start).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(8, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
+      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(9, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).add(1, 'hour').format('YYYY-MM-DD HH:mm:ss')
     }
   },
   methods: {

@@ -11,8 +11,6 @@
           :currentDate="currentDate"
           @refreshEvents="refreshEvents"
           @close="closeModal"
-          @confirm="saveEvent"
-          @delete="deleteEvent"
       />
     </transition>
   </div>
@@ -45,10 +43,7 @@ export default {
         locale: Nova.config.fullcalendar_locale || 'en',
         dateClick: this.handleDateClick,
         eventClick: this.handleEventClick,
-        eventDrag: this.handleDrag,
         eventDrop: this.handleDrop,
-        eventChange: this.handleChange,
-        eventsSet: this.handleChange,
         eventResize: this.handleDrop,
         dayMaxEvents: true,
         eventResizableFromStart: true,
@@ -77,9 +72,6 @@ export default {
     }
   },
   methods: {
-    handleDrag(date) {
-
-    },
     handleDrop(requestDate) {
       Nova.request()
           .put('/nova-vendor/nova-calendar/events/' + requestDate.event.id + '/update', {
@@ -102,9 +94,6 @@ export default {
             this.$toasted.show(response.data.message, {type: 'error'})
           });
     },
-    handleChange(info) {
-      //
-    },
     handleDateClick(date) {
       this.showModal = true;
       this.currentDate = date;
@@ -117,12 +106,6 @@ export default {
       this.showModal = false;
       this.currentEvent = null;
       this.currentDate = null;
-    },
-    saveEvent() {
-
-    },
-    deleteEvent() {
-
     },
     refreshEvents() {
       this.$refs.fullCalendar.getApi().refetchEvents();
