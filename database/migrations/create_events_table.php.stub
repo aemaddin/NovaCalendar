@@ -20,8 +20,11 @@ class CreateEventsTable extends Migration
             $table->string('color')->nullable();
             $table->timestamp('start')->nullable();
             $table->timestamp('end')->nullable();
+            $table->string('recurrence');
+            $table->foreignIdFor(\Asciisd\NovaCalendar\Models\Event::class)->nullable()->constrained();
             $table->morphs('eventable');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -11,6 +11,7 @@ use Illuminate\Foundation\Http\FormRequest;
  * @property string eventable_type
  * @property Carbon start
  * @property Carbon end
+ * @property string recurrence
  */
 class EventRequest extends FormRequest
 {
@@ -33,6 +34,7 @@ class EventRequest extends FormRequest
             'title'          => 'required',
             'eventable_id'   => 'required',
             'eventable_type' => 'required',
+            'recurrence'     => 'required',
             'start'          => 'required|date',
             'end'            => 'required|date|after_or_equal:start',
         ];

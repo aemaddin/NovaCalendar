@@ -1,64 +1,121 @@
 <template>
-  <modal @modal-close="handleClose" classWhitelist="flatpickr-calendar">
+  <modal
+      data-testid="event-modal"
+      tabindex="-1"
+      role="dialog"
+      classWhitelist="flatpickr-calendar"
+      :closes-via-backdrop="canLeave"
+      @modal-close="handleClose">
+
     <form
-        @submit.prevent="handleConfirm"
-        slot-scope="props"
-        class="bg-white rounded-lg shadow-lg overflow-hidden"
-        style="width: 460px">
-      <div class="p-8">
-        <heading v-if="!currentEvent" :level="2" class="mb-6">{{ __('Create Event') }}</heading>
-        <heading v-if="currentEvent" :level="2" class="mb-6">{{ __('Edit Event') }}</heading>
-        <div class="border-b border-40 pb-4">
-          <label class="block mb-2 text-80 leading-tight">Title:</label>
-          <input v-model="title" name="title" class="w-full form-control form-input form-input-bordered"/>
-        </div>
-        <div class="border-b border-40 py-4">
-          <label class="block mb-2 text-80">Model:</label>
-          <select v-model="eventable_type" @change="getEventableItems"
-                  class="w-full form-control form-input form-input-bordered" id="eventable_type">
-            <option value="">Please select one model</option>
-            <option v-for="value in eventables" :value="value">{{ value }}</option>
-          </select>
-        </div>
-        <div v-if="eventable_type" class="border-b border-40 py-4">
-          <label class="block mb-2 text-80">Model Item:</label>
-          <select v-model="eventable_id" class="w-full form-control form-input form-input-bordered" id="eventable_type">
-            <option value="">Please select one from {{ eventable_type }}</option>
-            <option v-for="value in eventable_items" :value="Object.values(value)[0]">{{
-                Object.values(value)[1]
-              }}
-            </option>
-          </select>
-        </div>
-        <div class="border-b border-40 py-4">
-          <label class="block mb-2 text-80 leading-tight">Start:</label>
-          <date-time-picker @change="changeStart" v-model="start" name="start"
-                            class="w-full form-control form-input form-input-bordered" autocomplete="off"/>
-        </div>
-        <div class="border-b border-40 py-4">
-          <label class="block mb-2 text-80">End:</label>
-          <date-time-picker @change="changeEnd" v-model="end" name="end"
-                            class="w-full form-control form-input form-input-bordered" autocomplete="off"/>
+        autocomplete="off"
+        @keydown="handleKeydown"
+        @submit.prevent.stop="handleConfirm"
+        class="bg-white overflow-hidden rounded-lg shadow-lg"
+        slot-scope="props">
+
+      <div style="width: 500px">
+        <heading :level="2" class="border-b border-40 py-8 px-8">
+          {{ !currentEvent ? __('Create Event') : __('Edit Event') }}
+        </heading>
+
+        <div>
+          <!-- Validation Errors -->
+          <validation-errors :errors="errors"/>
+
+          <form-section>
+            <template v-slot:label>
+              <form-label label="Title"/>
+            </template>
+            <template v-slot:content>
+              <form-text id="title" v-model="title"/>
+            </template>
+          </form-section>
+
+
+          <form-section>
+            <template v-slot:label>
+              <form-label label="Eventable Type"/>
+            </template>
+
+            <template v-slot:content>
+              <form-select id="eventable_type"
+                           dusk="eventable_type"
+                           label="Eventable Type"
+                           :options="eventables"
+                           v-model="eventable_type"
+                           @change="getEventableItems"/>
+            </template>
+          </form-section>
+
+          <form-section v-if="eventable_type">
+            <template v-slot:label>
+              <form-label label="Model Item"/>
+            </template>
+
+            <template v-slot:content>
+              <form-object-select id="eventable_id"
+                                  dusk="eventable_id"
+                                  label="Eventable"
+                                  :options="eventable_items"
+                                  value-name="id"
+                                  title-name="title"
+                                  v-model="eventable_id"/>
+            </template>
+          </form-section>
+
+          <form-section>
+            <template v-slot:label>
+              <form-label label="Start"/>
+            </template>
+            <template v-slot:content>
+              <date-time-picker @change="changeStart" v-model="start" name="start"
+                                class="w-full form-control form-input form-input-bordered" autocomplete="off"/>
+            </template>
+          </form-section>
+
+          <form-section>
+            <template v-slot:label>
+              <form-label label="End"/>
+            </template>
+            <template v-slot:content>
+              <date-time-picker @change="changeEnd" v-model="end" name="end"
+                                class="w-full form-control form-input form-input-bordered" autocomplete="off"/>
+            </template>
+          </form-section>
+
+          <form-section>
+            <template v-slot:label>
+              <label class="inline-block text-80 leading-tight">Recurrence</label>
+            </template>
+            <template v-slot:content>
+              <div v-for="(item, index) in recurrences">
+                <label :for="`recurrences_${item.value}`" class="inline-flex items-center">
+                  <input :id="`recurrences_${item.value}`" type="radio" class="form-radio"
+                         name="recurrences" v-model="recurrence"
+                         :value="item.value" :checked="index === 0"/>
+                  <span class="ml-2">{{ item.name }}</span>
+                </label>
+              </div>
+            </template>
+          </form-section>
         </div>
       </div>
 
-      <div class="flex justify-between bg-30 px-6 py-3">
+      <div class="bg-30 px-6 py-3 flex">
         <button v-if="currentEvent" @click.prevent="handleDelete" type="button"
                 class="btn btn-default btn-danger flex justify-center items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-labelledby="delete"
-               class="fill-current">
-            <path fill-rule="nonzero"
-                  d="M6 4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h5a1 1 0 0 1 0 2h-1v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6H1a1 1 0 1 1 0-2h5zM4 6v12h12V6H4zm8-2V2H8v2h4zM8 8a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1zm4 0a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z"></path>
-          </svg>
+          <trash-icon/>
         </button>
 
-        <div>
-          <button @click.prevent="handleClose" type="button" class="btn text-80 font-normal h-9 px-3 btn-link">
+        <div class="flex items-center ml-auto">
+          <button @click.prevent="handleClose" type="button"
+                  class="btn btn-link dim cursor-pointer text-80 ml-auto mr-6">
             {{ __('Cancel') }}
           </button>
 
-          <button @click.prevent="handleSave" ref="saveButton" type="submit" class="btn btn-default btn-primary ml-3">
-            {{ __('Save') }}
+          <button @click.prevent="handleSave" ref="saveButton" type="submit" class="btn btn-default btn-primary">
+            {{ confirmButtonText }}
           </button>
         </div>
       </div>
@@ -67,21 +124,49 @@
 </template>
 
 <script>
+import FormText from "@/components/Fields/FormText";
+import FormSelect from "@/components/Fields/FormSelect";
+import FormLabel from "@/components/Fields/FormLabel";
+import FormSection from "@/components/Fields/FormSection";
+import FormObjectSelect from "@/components/Fields/FormObjectSelect";
+import FormRadioGroup from "@/components/Fields/FormRadioGroup";
+import TrashIcon from "@/components/Icons/TrashIcon";
+
 export default {
+  components: {TrashIcon, FormRadioGroup, FormObjectSelect, FormSection, FormLabel, FormSelect, FormText},
   props: ['currentEvent', 'currentDate'],
   data() {
     return {
-      eventables: [],
+      errors: null,
+      canLeave: true,
+      confirmButtonText: this.currentEvent !== null ? 'Update' : 'Create',
       title: this.currentEvent !== null ? this.currentEvent.event.title : '',
-      eventable_items: [],
-      eventable_type: null,
-      display_field: 'title',
-      eventable_id: null,
       start: this.currentEvent !== null ? moment(this.currentEvent.event.start).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(8, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
-      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(9, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).add(1, 'hour').format('YYYY-MM-DD HH:mm:ss')
+      end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(9, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).add(0.5, 'hour').format('YYYY-MM-DD HH:mm:ss'),
+      eventables: [],
+      eventable_id: null,
+      eventable_type: null,
+      eventable_items: [],
+      recurrence: this.currentEvent !== null ? this.currentEvent.event.extendedProps.recurrence : 'none',
+      recurrences: [
+        {name: 'None', value: 'none'},
+        {name: 'Daily', value: 'daily'},
+        {name: 'Weekly', value: 'weekly'},
+        {name: 'Monthly', value: 'monthly'},
+      ]
     }
   },
   methods: {
+    /**
+     * Stop propogation of input events unless it's for an escape or enter keypress
+     */
+    handleKeydown(e) {
+      if (['Escape', 'Enter'].indexOf(e.key) !== -1) {
+        return
+      }
+
+      e.stopPropagation()
+    },
     getEventables() {
       Nova.request().get('/nova-vendor/nova-calendar/eventables')
           .then(response => {
@@ -111,21 +196,15 @@ export default {
       this.$emit('confirm')
     },
     handleDelete() {
-      Nova.request()
-          .delete('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/destroy')
-          .then(response => {
-            if (response.data.success) {
-              this.$toasted.show('Event has been deleted', {type: 'success'});
-              this.$emit('close');
-              this.$emit('refreshEvents');
-            }
-          });
+      this.$emit('close');
+      this.$emit('delete', this.currentEvent)
     },
     handleSave() {
       let data = {
         title: this.title,
         eventable_id: this.eventable_id,
         eventable_type: this.eventable_type,
+        recurrence: this.recurrence,
         start: moment.utc(moment(this.start)), // convert time to utc before save it
         end: moment.utc(moment(this.end)), // convert time to utc before save it
       };
@@ -142,17 +221,8 @@ export default {
               }
             });
       } else if (this.currentEvent !== null) {
-        Nova.request()
-            .put('/nova-vendor/nova-calendar/events/' + this.currentEvent.event.id + '/update', data)
-            .then(response => {
-              if (response.data.success) {
-                this.$toasted.show('Event has been updated', {type: 'success'});
-                this.$emit('close');
-                this.$emit('refreshEvents');
-              } else if (response.data.error === true) {
-                this.$toasted.show(response.data.message, {type: 'error'});
-              }
-            });
+        this.$emit('close');
+        this.$emit('update', this.currentEvent, data);
       }
     },
     getEventableFromCurrentEvent() {

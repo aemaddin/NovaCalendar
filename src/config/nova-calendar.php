@@ -2,8 +2,11 @@
 
 return [
     // Calendar language (more info: https://fullcalendar.io/docs/locale)
-    'fullcalendar_locale'  => 'en',
+    'locale'               => 'en',
+    'timezone'             => 'UTC',
     'max_limit_of_one_day' => 8,
+    'date_format'          => 'Y-m-d',
+    'time_format'          => 'H:i:s',
     'editable'             => true,
     'eventable_types'      => [
         //        'Courses' => [

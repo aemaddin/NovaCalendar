@@ -42,7 +42,7 @@ class ToolServiceProvider extends ServiceProvider
             }
 
             Nova::provideToScript([
-                'fullcalendar_locale' => config('nova-calendar.fullcalendar_locale'),
+                'novaCalendar' => config('nova-calendar'),
             ]);
         });
     }

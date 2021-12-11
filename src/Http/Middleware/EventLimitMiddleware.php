@@ -19,7 +19,7 @@ class EventLimitMiddleware
      * @return mixed
      */
     public function handle(Request $request, Closure $next) {
-        $start_datetime = Carbon::createFromTimeString($request->start);
+        $start_datetime = $request->start;
         if(Event::limitReachedWithin($start_datetime)) {
             EventException::limitExceed($start_datetime);
         }

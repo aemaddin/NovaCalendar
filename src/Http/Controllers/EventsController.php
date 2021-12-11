@@ -41,9 +41,10 @@ class EventsController
         $new_event = $this->getModelFromRequest($request)
                           ->events()
                           ->save(Event::make([
-                              'title' => $request->title,
-                              'start' => $request->start,
-                              'end'   => $request->end,
+                              'title'      => $request->title,
+                              'start'      => $request->start,
+                              'end'        => $request->end,
+                              'recurrence' => $request->recurrence,
                           ]));
 
         return response()->json([

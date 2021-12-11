@@ -15,16 +15,14 @@
     "@fullcalendar/interaction": "^5.10.0",
     "@fullcalendar/list": "^5.10.0",
     "@fullcalendar/timegrid": "^5.10.0",
-    "@fullcalendar/vue": "^5.10.0",
+    "@fullcalendar/vue": "^5.10.1",
     "laravel-nova": "^1.12.3",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
     "vue-loader": "^15.9.8",
-    "vue-template-compiler": "^2.6.14"
-  },
-  "dependencies": {
-    "cross-env": "^5.0.0",
+    "vue-template-compiler": "^2.6.14",
+    "cross-env": "^5.2.1",
     "laravel-mix": "^6.0.6"
   }
 }
