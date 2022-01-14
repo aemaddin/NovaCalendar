@@ -17,7 +17,7 @@
       <div style="width: 500px">
         <heading :level="2" class="border-b border-40 py-8 px-8 flex justify-between items-center">
           {{ !currentEvent ? __('Create Event') : __('Edit Event') }}
-          <div class="flex">
+          <div class="flex" v-if="currentEvent">
             <a :href="'/nova/resources/events/' + currentEvent.event.id"
                class="cursor-pointer text-70 hover:text-primary mr-3 inline-flex items-center has-tooltip"
                data-original-title="null">
