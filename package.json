@@ -10,19 +10,21 @@
     "production": "mix --production"
   },
   "devDependencies": {
-    "@fullcalendar/core": "^5.10.0",
-    "@fullcalendar/daygrid": "^5.10.0",
-    "@fullcalendar/interaction": "^5.10.0",
-    "@fullcalendar/list": "^5.10.0",
-    "@fullcalendar/timegrid": "^5.10.0",
+    "@fullcalendar/core": "^5.10.1",
+    "@fullcalendar/daygrid": "^5.10.1",
+    "@fullcalendar/interaction": "^5.10.1",
+    "@fullcalendar/list": "^5.10.1",
+    "@fullcalendar/timegrid": "^5.10.1",
     "@fullcalendar/vue": "^5.10.1",
-    "laravel-nova": "^1.12.3",
+    "cross-env": "^5.2.1",
+    "laravel-mix": "^6.0.6",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
+    "slugify": "^1.6.5",
     "vue-loader": "^15.9.8",
-    "vue-template-compiler": "^2.6.14",
-    "cross-env": "^5.2.1",
-    "laravel-mix": "^6.0.6"
+    "vue-template-compiler": "^2.6.14"
   }
 }

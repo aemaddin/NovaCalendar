@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="card py-6 px-6">
-      <FullCalendar ref="fullCalendar" :options="calendarOptions"/>
+      <FullCalendar :options="calendarOptions"/>
     </div>
 
     <transition name="fade">
@@ -23,7 +23,6 @@
             resource-name="events"
             @confirm="handleDelete"
             @close="closeDeleteModal">
-
         </confirm-action-modal>
 
         <confirm-action-modal
@@ -46,7 +45,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import listPlugin from '@fullcalendar/list';
-import EventModal from './EventModal.vue';
+import EventModal from '@/views/EventModal.vue';
 import ConfirmActionModal from "@/components/Modals/ConfirmActionModal";
 
 export default {
@@ -62,6 +61,8 @@ export default {
   },
   data() {
     return {
+      initialLoading: true,
+      loading: false,
       showHandleDelete: false,
       showHandleUpdate: false,
       currentEvent: null,

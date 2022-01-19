@@ -44,10 +44,18 @@
               <form-label label="Title"/>
             </template>
             <template v-slot:content>
-              <form-text id="title" v-model="title"/>
+              <form-text id="title" v-model="title" @input="handleChange"/>
             </template>
           </form-section>
 
+          <form-section>
+            <template v-slot:label>
+              <form-label label="Slug"/>
+            </template>
+            <template v-slot:content>
+              <form-text id="slug" v-model="slug"/>
+            </template>
+          </form-section>
 
           <form-section>
             <template v-slot:label>
@@ -148,9 +156,10 @@ import FormObjectSelect from "@/components/Fields/FormObjectSelect";
 import FormRadioGroup from "@/components/Fields/FormRadioGroup";
 import TrashIcon from "@/components/Icons/TrashIcon";
 import AddUserIcon from "@/components/Icons/AddUserIcon";
+import slugify from '@/util/slugify'
 
 export default {
-  components: {AddUserIcon, TrashIcon, FormRadioGroup, FormObjectSelect, FormSection, FormLabel, FormSelect, FormText},
+  components: {AddUserIcon, TrashIcon, FormRadioGroup, FormObjectSelect, FormSection, FormLabel, FormSelect, FormText, slugify},
   props: ['currentEvent', 'currentDate'],
   data() {
     return {
@@ -158,6 +167,7 @@ export default {
       canLeave: true,
       confirmButtonText: this.currentEvent !== null ? 'Update' : 'Create',
       title: this.currentEvent !== null ? this.currentEvent.event.title : '',
+      slug: this.currentEvent !== null ? this.currentEvent.event.extendedProps.slug : '',
       start: this.currentEvent !== null ? moment(this.currentEvent.event.start).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(8, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
       end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(9, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).add(0.5, 'hour').format('YYYY-MM-DD HH:mm:ss'),
       eventables: [],
@@ -174,9 +184,9 @@ export default {
     }
   },
   methods: {
-    /**
-     * Stop propogation of input events unless it's for an escape or enter keypress
-     */
+    handleChange() {
+      this.slug = slugify(this.title)
+    },
     handleKeydown(e) {
       if (['Escape', 'Enter'].indexOf(e.key) !== -1) {
         return
@@ -219,6 +229,7 @@ export default {
     handleSave() {
       let data = {
         title: this.title,
+        slug: this.slug,
         eventable_id: this.eventable_id,
         eventable_type: this.eventable_type,
         recurrence: this.recurrence,
