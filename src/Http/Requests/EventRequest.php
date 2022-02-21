@@ -32,6 +32,7 @@ class EventRequest extends FormRequest
     public function rules() {
         return [
             'title'          => 'required',
+            'slug'           => 'required',
             'eventable_id'   => 'required',
             'eventable_type' => 'required',
             'recurrence'     => 'required',

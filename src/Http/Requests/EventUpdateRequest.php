@@ -23,6 +23,7 @@ class EventUpdateRequest extends FormRequest
     public function rules() {
         return [
             'title'          => 'required',
+            'slug'           => 'required',
             'start'          => 'required|date',
             'eventable_id'   => 'required',
             'eventable_type' => 'required',
