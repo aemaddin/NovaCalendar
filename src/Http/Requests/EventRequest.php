@@ -7,6 +7,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * @property string title
+ * @property string slug
  * @property int eventable_id
  * @property string eventable_type
  * @property Carbon start

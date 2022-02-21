@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * @property int id
  * @property string title
+ * @property string slug
  * @property string color
  * @property Carbon start
  * @property Carbon end

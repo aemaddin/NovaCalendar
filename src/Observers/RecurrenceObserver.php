@@ -33,6 +33,7 @@ class RecurrenceObserver
                     $end->{$recurrence['function']}();
                     $event->events()->create([
                         'title'          => $event->title,
+                        'slug'           => $event->slug,
                         'start'          => $start,
                         'end'            => $end,
                         'eventable_id'   => $event->eventable_id,
@@ -70,6 +71,11 @@ class RecurrenceObserver
                 if($event->isDirty('title')
                    && $childEvent->title == $event->getOriginal('title')) {
                     $childEvent->title = $event->title;
+                }
+
+                if($event->isDirty('slug')
+                   && $childEvent->slug == $event->getOriginal('slug')) {
+                    $childEvent->slug = $event->slug;
                 }
                 $childEvent->saveQuietly();
             }
