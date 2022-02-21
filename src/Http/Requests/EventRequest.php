@@ -7,7 +7,6 @@ use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * @property string title
- * @property string slug
  * @property int eventable_id
  * @property string eventable_type
  * @property Carbon start
@@ -33,7 +32,6 @@ class EventRequest extends FormRequest
     public function rules() {
         return [
             'title'          => 'required',
-            'slug'           => 'required',
             'eventable_id'   => 'required',
             'eventable_type' => 'required',
             'recurrence'     => 'required',

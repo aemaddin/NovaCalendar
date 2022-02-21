@@ -10,8 +10,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * @property int id
+ * @property int eventable_id
+ * @property string eventable_type
  * @property string title
- * @property string slug
  * @property string color
  * @property Carbon start
  * @property Carbon end

@@ -42,7 +42,6 @@ class EventsController
                           ->events()
                           ->save(Event::make([
                               'title'      => $request->title,
-                              'slug'       => $request->slug,
                               'start'      => $request->start,
                               'end'        => $request->end,
                               'recurrence' => $request->recurrence,

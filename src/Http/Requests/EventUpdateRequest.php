@@ -2,8 +2,16 @@
 
 namespace Asciisd\NovaCalendar\Http\Requests;
 
+use Illuminate\Support\Carbon;
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @property string title
+ * @property int eventable_id
+ * @property string eventable_type
+ * @property Carbon start
+ * @property Carbon end
+ */
 class EventUpdateRequest extends FormRequest
 {
     /**
@@ -23,7 +31,6 @@ class EventUpdateRequest extends FormRequest
     public function rules() {
         return [
             'title'          => 'required',
-            'slug'           => 'required',
             'start'          => 'required|date',
             'eventable_id'   => 'required',
             'eventable_type' => 'required',
