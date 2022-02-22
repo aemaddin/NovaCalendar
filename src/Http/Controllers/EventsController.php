@@ -10,9 +10,7 @@ use Asciisd\NovaCalendar\Http\Requests\EventUpdateRequest;
 class EventsController
 {
     public function index(Request $request) {
-        $events = Event::filter($request->query())
-                       ->with('eventable')
-                       ->get();
+        $events = Event::filter($request->query())->get();
 
         return response()->json($events);
     }

@@ -10,8 +10,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * @property int id
- * @property int eventable_id
- * @property string eventable_type
+ * @property int min_attendees
+ * @property int max_attendees
  * @property string title
  * @property string color
  * @property Carbon start
@@ -30,8 +30,6 @@ class Event extends Model
         'weekly'  => 'Weekly',
         'monthly' => 'Monthly',
     ];
-
-    protected $appends = ['eventable_name'];
 
     protected $casts = [
         'start' => 'datetime',

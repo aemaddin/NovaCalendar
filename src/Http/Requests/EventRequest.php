@@ -31,12 +31,12 @@ class EventRequest extends FormRequest
      */
     public function rules() {
         return [
-            'title'          => 'required',
-            'eventable_id'   => 'required',
-            'eventable_type' => 'required',
-            'recurrence'     => 'required',
-            'start'          => 'required|date',
-            'end'            => 'required|date|after_or_equal:start',
+            'title'         => 'required',
+            'min_attendees' => 'sometimes|numeric|min:1',
+            'max_attendees' => 'sometimes|numeric|min:1',
+            'recurrence'    => 'required',
+            'start'         => 'required|date',
+            'end'           => 'required|date|after_or_equal:start',
         ];
     }
 }

@@ -50,37 +50,6 @@
 
           <form-section>
             <template v-slot:label>
-              <form-label label="Eventable Type"/>
-            </template>
-
-            <template v-slot:content>
-              <form-select id="eventable_type"
-                           dusk="eventable_type"
-                           label="Eventable Type"
-                           :options="eventables"
-                           v-model="eventable_type"
-                           @change="getEventableItems"/>
-            </template>
-          </form-section>
-
-          <form-section v-if="eventable_type">
-            <template v-slot:label>
-              <form-label label="Model Item"/>
-            </template>
-
-            <template v-slot:content>
-              <form-object-select id="eventable_id"
-                                  dusk="eventable_id"
-                                  label="Eventable"
-                                  :options="eventable_items"
-                                  value-name="id"
-                                  title-name="title"
-                                  v-model="eventable_id"/>
-            </template>
-          </form-section>
-
-          <form-section>
-            <template v-slot:label>
               <form-label label="Start"/>
             </template>
             <template v-slot:content>
@@ -96,6 +65,24 @@
             <template v-slot:content>
               <date-time-picker @change="changeEnd" v-model="end" name="end"
                                 class="w-full form-control form-input form-input-bordered" autocomplete="off"/>
+            </template>
+          </form-section>
+
+          <form-section>
+            <template v-slot:label>
+              <form-label label="Min Attendees"/>
+            </template>
+            <template v-slot:content>
+              <form-text id="min_attendees" v-model="min_attendees"/>
+            </template>
+          </form-section>
+
+          <form-section>
+            <template v-slot:label>
+              <form-label label="Max Attendees"/>
+            </template>
+            <template v-slot:content>
+              <form-text id="max_attendees" v-model="max_attendees"/>
             </template>
           </form-section>
 
@@ -157,12 +144,10 @@ export default {
       canLeave: true,
       confirmButtonText: this.currentEvent !== null ? 'Update' : 'Create',
       title: this.currentEvent !== null ? this.currentEvent.event.title : '',
+      min_attendees: this.currentEvent !== null ? this.currentEvent.event.extendedProps.min_attendees : 1,
+      max_attendees: this.currentEvent !== null ? this.currentEvent.event.extendedProps.max_attendees : null,
       start: this.currentEvent !== null ? moment(this.currentEvent.event.start).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(8, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).format('YYYY-MM-DD HH:mm:ss'),
       end: this.currentEvent !== null ? moment(this.currentEvent.event.end).format('YYYY-MM-DD HH:mm:ss') : this.currentDate.allDay ? moment(this.currentDate.date).add(9, 'hour').format('YYYY-MM-DD HH:mm:ss') : moment(this.currentDate.date).add(0.5, 'hour').format('YYYY-MM-DD HH:mm:ss'),
-      eventables: [],
-      eventable_id: null,
-      eventable_type: null,
-      eventable_items: [],
       recurrence: this.currentEvent !== null ? this.currentEvent.event.extendedProps.recurrence : 'none',
       recurrences: [
         {name: 'None', value: 'none'},
@@ -179,21 +164,6 @@ export default {
       }
 
       e.stopPropagation()
-    },
-    getEventables() {
-      Nova.request().get('/nova-vendor/nova-calendar/eventables')
-          .then(response => {
-            this.eventables = response.data
-          });
-    },
-    getEventableItems() {
-      if (!this.eventable_id) {
-        this.eventable_id = 1;
-      }
-      Nova.request().get('/nova-vendor/nova-calendar/eventables/' + this.eventable_type)
-          .then(response => {
-            this.eventable_items = response.data
-          });
     },
     changeStart(value) {
       this.start = value;
@@ -215,8 +185,8 @@ export default {
     handleSave() {
       let data = {
         title: this.title,
-        eventable_id: this.eventable_id,
-        eventable_type: this.eventable_type,
+        min_attendees: this.min_attendees,
+        max_attendees: this.max_attendees,
         recurrence: this.recurrence,
         start: moment.utc(moment(this.start)), // convert time to utc before save it
         end: moment.utc(moment(this.end)), // convert time to utc before save it
@@ -237,17 +207,6 @@ export default {
         this.$emit('close');
         this.$emit('update', this.currentEvent, data);
       }
-    },
-    getEventableFromCurrentEvent() {
-      this.eventable_type = this.currentEvent.event._def.extendedProps.eventable_name;
-      this.eventable_id = this.currentEvent.event._def.extendedProps.eventable_id;
-      this.getEventableItems();
-    }
-  },
-  mounted() {
-    this.getEventables();
-    if (this.currentEvent) {
-      this.getEventableFromCurrentEvent();
     }
   }
 }

@@ -32,12 +32,12 @@ class RecurrenceObserver
                     $start->{$recurrence['function']}();
                     $end->{$recurrence['function']}();
                     $event->events()->create([
-                        'title'          => $event->title,
-                        'start'          => $start,
-                        'end'            => $end,
-                        'eventable_id'   => $event->eventable_id,
-                        'eventable_type' => $event->eventable_type,
-                        'recurrence'     => $event->recurrence,
+                        'title'         => $event->title,
+                        'start'         => $start,
+                        'end'           => $end,
+                        'min_attendees' => $event->min_attendees,
+                        'max_attendees' => $event->max_attendees,
+                        'recurrence'    => $event->recurrence,
                     ]);
                 }
             }
