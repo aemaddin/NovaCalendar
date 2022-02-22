@@ -9,7 +9,7 @@ class RecurrenceObserver
 {
     public static function created(Event $event) {
         if( ! $event->event()->exists()) {
-            $recurrences = [
+            $recurrences   = [
                 'daily'   => [
                     'times'    => 365,
                     'function' => 'addDay',
@@ -23,14 +23,18 @@ class RecurrenceObserver
                     'function' => 'addMonth',
                 ],
             ];
-            $start       = Carbon::parse($event->start);
-            $end         = Carbon::parse($event->end);
-            $recurrence  = $recurrences[$event->recurrence] ?? null;
+            $start         = Carbon::parse($event->start);
+            $end           = Carbon::parse($event->end);
+            $min_attendees = $event->min_attendees;
+            $max_attendees = $event->max_attendees;
+            $recurrence    = $recurrences[$event->recurrence] ?? null;
 
             if($recurrence) {
                 for($i = 0; $i < $recurrence['times']; $i++) {
                     $start->{$recurrence['function']}();
                     $end->{$recurrence['function']}();
+                    $min_attendees->{$recurrence['function']}();
+                    $max_attendees->{$recurrence['function']}();
                     $event->events()->create([
                         'title'         => $event->title,
                         'start'         => $start,
