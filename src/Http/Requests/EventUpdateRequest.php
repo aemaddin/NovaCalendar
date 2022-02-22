@@ -7,8 +7,8 @@ use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * @property string title
- * @property int eventable_id
- * @property string eventable_type
+ * @property int min_attendees
+ * @property int max_attendees
  * @property Carbon start
  * @property Carbon end
  */

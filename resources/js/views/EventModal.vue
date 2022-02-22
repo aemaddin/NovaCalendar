@@ -19,6 +19,7 @@
           {{ !currentEvent ? __('Create Event') : __('Edit Event') }}
           <div class="flex" v-if="currentEvent">
             <a :href="'/nova/resources/events/' + currentEvent.event.id"
+               title="View event"
                class="cursor-pointer text-70 hover:text-primary mr-3 inline-flex items-center has-tooltip"
                data-original-title="null">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 16" aria-labelledby="view"
@@ -27,10 +28,10 @@
                     d="M16.56 13.66a8 8 0 0 1-11.32 0L.3 8.7a1 1 0 0 1 0-1.42l4.95-4.95a8 8 0 0 1 11.32 0l4.95 4.95a1 1 0 0 1 0 1.42l-4.95 4.95-.01.01zm-9.9-1.42a6 6 0 0 0 8.48 0L19.38 8l-4.24-4.24a6 6 0 0 0-8.48 0L2.4 8l4.25 4.24h.01zM10.9 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
               </svg>
             </a>
-            <a :href="'/nova/resources/events/' + currentEvent.event.id + '/attach/users?viaRelationship=users&polymorphic=0'"
-               title="Add Participants"
+            <a :href="'https://idive.test/nova/resources/bookings/new?viaResource=events&viaResourceId=' + currentEvent.event.id + '&viaRelationship=bookings'"
+               title="Book Now"
                class="btn btn-default btn-primary flex items-center justify-center px-3" v-if="currentEvent">
-              <add-user-icon class="fill-current text-white"/>
+              <booking-icon class="fill-current text-white"/>
             </a>
           </div>
         </heading>
@@ -134,9 +135,12 @@ import FormObjectSelect from "@/components/Fields/FormObjectSelect";
 import FormRadioGroup from "@/components/Fields/FormRadioGroup";
 import TrashIcon from "@/components/Icons/TrashIcon";
 import AddUserIcon from "@/components/Icons/AddUserIcon";
+import BookingIcon from "@/components/Icons/BookingIcon";
 
 export default {
-  components: {AddUserIcon, TrashIcon, FormRadioGroup, FormObjectSelect, FormSection, FormLabel, FormSelect, FormText},
+  components: {
+    BookingIcon,
+    AddUserIcon, TrashIcon, FormRadioGroup, FormObjectSelect, FormSection, FormLabel, FormSelect, FormText},
   props: ['currentEvent', 'currentDate'],
   data() {
     return {

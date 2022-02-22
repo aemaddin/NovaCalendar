@@ -2,7 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Asciisd\NovaCalendar\Http\Middleware\EventLimitMiddleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,10 +19,6 @@ use Asciisd\NovaCalendar\Http\Middleware\EventLimitMiddleware;
 // });
 
 Route::get('/events', 'EventsController@index');
-Route::get('/eventables', 'EventsController@eventables');
-Route::get('/eventables/{eventable_type}', 'EventsController@eventableItems');
-Route::post('/events/store', 'EventsController@store')
-     ->middleware(EventLimitMiddleware::class);
-Route::put('/events/{event_id}/update', 'EventsController@update')
-    ->middleware(EventLimitMiddleware::class);
+Route::post('/events/store', 'EventsController@store');
+Route::put('/events/{event_id}/update', 'EventsController@update');
 Route::delete('/events/{event_id}/destroy', 'EventsController@destroy');
