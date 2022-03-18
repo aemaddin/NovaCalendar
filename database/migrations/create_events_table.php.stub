@@ -23,8 +23,8 @@ class CreateEventsTable extends Migration
             $table->timestamp('start')->nullable();
             $table->timestamp('end')->nullable();
             $table->string('recurrence');
-            $table->int('min_attendees')->default(1);
-            $table->int('max_attendees')->nullable();
+            $table->integer('min_attendees')->default(1);
+            $table->integer('max_attendees')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
