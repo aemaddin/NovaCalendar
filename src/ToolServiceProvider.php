@@ -22,9 +22,8 @@ class ToolServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__
-            . '/../database/migrations/create_events_table.php.stub' => database_path('migrations/'
-                                                                                      . date('Y_m_d_His',
-                    time()) . '_create_events_table.php'),
+            . '/../database/migrations/create_events_table.php.stub' =>
+                database_path('migrations/' . date('Y_m_d_His', time()) . '_create_events_table.php'),
         ], 'migrations');
 
         $this->publishes([
@@ -73,7 +72,7 @@ class ToolServiceProvider extends ServiceProvider
 
         $this->commands([
             \Asciisd\NovaCalendar\Console\Commands\ImportEvents::class,
-            \Asciisd\NovaCalendar\Console\Commands\ExportEvents::class
+            \Asciisd\NovaCalendar\Console\Commands\ExportEvents::class,
         ]);
     }
 }
